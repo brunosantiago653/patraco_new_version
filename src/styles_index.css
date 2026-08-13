@@ -1,0 +1,47 @@
+/*
+==============================
+ COLORES Y FUENTES
+==============================
+*/
+:root {
+  /* Color del texto */
+  --main-text: color: #001739;
+  --hover-text: color: #2161cc;
+  --simple-text: color: #fefefe;
+
+  /* Colores de fondo */
+  --secondary-link: color: #0eb232;
+  --background-color: color: #fefefe;
+
+  /* Fuentes */
+  --font-main: font-family: "Titillium Web", sans-serif;
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+/*
+==================================
+ ESTILOS PARA HEADER Y NAVEGACIÓN
+==================================
+*/
+/* Estilos para panatllas 1080px */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background-color: var(--background-color);
+}
+.header_container_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
