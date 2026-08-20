@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /*
 ==============================
  COLORES Y FUENTES
@@ -5,23 +7,23 @@
 */
 :root {
   /* Color del texto */
-  --main-text: color: #001739;
-  --hover-text: color: #2161cc;
-  --simple-text: color: #fefefe;
-
-  /* Colores de fondo */
-  --secondary-link: color: #0eb232;
-  --background-color: color: #fefefe;
-
-  /* Fuentes */
-  --font-main: font-family: "Titillium Web", sans-serif;
+  --main-text: #010e31;
+  --hover-text: #145dd0;
+  --secondary-text: #f9f9f9;
+  /*Colores de fondo */
+  --main-bg: #010e31;
+  --hover-bg: #145dd0;
+  --whastsapp-bg: #1eb437;
+  --general-bg: #ffffff;
+  /*Fuentes*/
+  --font-main: "Montserrat", sans-serif;
+  --font-second: "Inter", sans-serif;
 }
 
 /* Estilos globales */
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--font-main);
 }
 
 /*
@@ -29,19 +31,318 @@
  ESTILOS PARA HEADER Y NAVEGACIÓN
 ==================================
 */
-/* Estilos para panatllas 1080px */
-.header-container {
+/* Header */
+.header_container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-
-  background-color: var(--background-color);
+  background-color: var(--general-bg);
 }
 .header_container_main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+
+  background-color: var(--general-bg);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+}
+/*Logo*/
+.logo-container {
+  display: block;
+  align-items: center;
+  margin-left: 160px;
+}
+.logo {
+  width: auto;
+  height: auto;
+}
+/* Estilos para la navegación */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.link-menu {
+  display: inline-block;
+
+  font-family: var(--font-second);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-text);
+  text-decoration: none;
+  list-style: none;
+
+  text-shadow: 0px 2px 4px rgba(30, 41, 59, 0.15);
+  transition:
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.link-menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--hover-text);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-menu:hover {
+  color: var(--hover-text);
+  font-weight: 500;
+  transform: translateY(-2px);
+}
+.link-menu:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.link-menu-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 18px;
+
+  background-color: var(--whastsapp-bg);
+  color: var(--secondary-text);
+  font-family: var(--font-second);
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-radius: 5px;
+  transition: 0.8s ease;
+}
+.link-menu-whatsapp:hover {
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(40, 167, 69, 0.2);
+  transform: scale(1.1);
+  transition: 0.8s ease;
+}
+
+/*
+==================================
+ ESTILOS PARA CONTENIDO PRINCIPAL
+==================================
+*/
+/*Estilos para hero */
+.hero-container-main {
+  padding-top: 120px;
+  position: relative;
+}
+/* Imagen */
+.image-container-hero {
+  position: absolute;
+  z-index: -999;
+}
+.image-hero {
+  background-image: url("src/assets/hero_image_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+/* Texto y botones */
+.hero-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-top: 90px;
+  margin-left: 40px;
+}
+.hero-title {
+  text-align: justify;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--font-main);
+
+  color: var(--main-text);
+}
+#hero-title-strong {
+  color: var(--hover-text);
+  font-weight: 600;
+}
+.hero-text {
+  font-family: var(--font-second);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 18px;
+
+  color: var(--main-text);
+}
+
+/* Listas */
+.hero-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: flex-start;
+  max-width: 600px;
+}
+.hero-list-text {
+  color: var(--main-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Links */
+.btn-hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+.btn-hero-cotizar {
+  color: var(--secondary-text);
+  background-color: var(--hover-bg);
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-second);
+  padding: 12px 18px;
+
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.8s ease;
+}
+.btn-hero-cotizar:hover {
+  transform: scale(1.1);
+  transition: 0.8s ease;
+  box-shadow: 0 4px 14px 0 rgba(0, 123, 255, 0.4);
+}
+.btn-hero-whatsapp {
+  color: var(--secondary-text);
+  background-color: var(--whastsapp-bg);
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-second);
+  padding: 12px 18px;
+
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.8s ease;
+}
+.btn-hero-whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.8s ease;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(40, 167, 69, 0.2);
+}
+/* Herramientas */
+.hero-tools-container {
+  background-color: var(--main-bg);
+  color: var(--secondary-text);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -4px rgba(0, 0, 0, 0.08);
+
+  width: 600px;
+  height: auto;
+  padding: 30px 90px;
+
+  margin-top: 30px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: row;
+}
+/* Logo */
+.hero-tool-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.hero-tool-image {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+/*
+==================================
+ ESTILOS PARA SECCIÓN SOLUCIONES
+==================================
+*/
+/* Contenedor */
+#solutions-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 118px;
+  margin-top: 20px;
+}
+/* Texto */
+.solutions-text-container {
+  gap: 18px;
+  text-align: center;
+}
+#solutions-title-main {
+  font-family: var(--font-second);
+  font-size: 28px;
+  font-weight: 500;
+
+  color: var(--hover-text);
+}
+#solutions-title-secondary {
+  font-family: var(--font-second);
+  font-size: 32px;
+  font-weight: 700;
+
+  color: var(--main-text);
+}
+#flex-hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+hr {
+  width: 100px;
+  font-weight: bold;
+  color: var(--main-text);
+}
+
+/* Soluciones */
+.solutions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 35px;
+}
+
+.solution-item-container {
+  background-color: var(--general-bg);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.08),
+    0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  border: 1px solid var(--secondary-text);
+
+  width: 200px;
+  height: 320px;
 }
