@@ -410,4 +410,53 @@
     text-align: center;
   }
 
+  /* Tarjetas de metodología de trabajo */
+  #works-container-main {
+    padding-top: 100px;
+    margin-top: 40px;
+  }
+  .works-container-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .work-item-container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Texto de las tarjetas */
+  .works-container-text {
+    text-align: center;
+    color: var(--main-text);
+  }
+  .works-subtitle {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  .works-description {
+    font-family: var(--font-second);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  /* Imagen de logros */
+  .items-works-container {
+    margin-top: 120px;
+  }
+  .achievements-img {
+    width: 100%;
+    height: auto;
+    background-image: url(src/assets/works_image_patraco.jpeg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
 }
