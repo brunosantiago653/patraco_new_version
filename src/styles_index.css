@@ -382,4 +382,32 @@
     color: var(--main-text);
     text-align: center;
   }
+
+  /* Sección general de metodología de trabajo */
+  .works-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+  }
+  /* Encabezados */
+  .title-works {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-weight:550;
+    color: var(--hover-text);
+
+    text-align: center;
+  }
+  #text-main-wroks {
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-text);
+
+    text-align: center;
+  }
+
 }
