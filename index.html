@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>patraco | Tecnología en patronaje, trazo y corte textil</title>
+    
+    <!-- Scripts y estilos -->
     <script src="src/script_index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/2a3f562a19.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/styles_index.css" />
-    <title>patraco | Tecnología en patronaje, trazo y corte textil</title>
   </head>
   <body>
-    <!--
-    ========================
-    HEADER y NAVEGACIÓN
-    ========================
-    -->
+    <!-- Encabezado principal y navegación -->
     <header class="header_container">
       <div class="header_container_main">
+        <!-- Logotipo de la marca -->
         <div class="logo-container">
           <img
             src="src/assets/patraco_logo.png"
@@ -26,6 +26,7 @@
             class="logo"
           />
         </div>
+        <!-- Menú de navegación principal -->
         <nav class="navbar_container">
           <ul class="navbar">
             <li><a href="index.html" class="link-menu">Inicio</a></li>
@@ -50,79 +51,70 @@
         </nav>
       </div>
     </header>
-    <!--
-    ========================
-    CONTENIDO PRINCIPAL
-    ========================
-    -->
+
+    <!-- Contenido principal -->
     <main>
-      <!--SECCION HERO-->
+      <!-- Sección Hero -->
       <section class="hero-container-main">
-        <!-- Imagen de fondo -->
-        <div class="image-container-hero">
+        <!-- Imagen gráfica de portada -->
+        <figure class="image-container-hero">
           <img
             src="src/assets/hero_image_bg.png"
             alt="Imagen de fondo"
             class="image-hero"
           />
-        </div>
-        <!-- Contenedor de texto -->
+        </figure>
+        <!-- Información de presentación hero -->
         <div class="hero-container-text">
-          <h2 class="hero-title">
+          <h1 class="hero-title">
             PATRONAJE, TRAZO <br />
             Y CORTE TEXTIL <br />
             <strong id="hero-title-strong"
               >CON MÁS DE 20 AÑOS <br />
               DE EXPERIENCIA</strong
             >
-          </h2>
+          </h1>
           <p class="hero-text">
             Desarrollamos soluciones para marcas, talleres y empresas <br />
             de confección, optimizando cada etapa de tu producción <br />
             con tecnología especializada.
           </p>
-          <!-- Lista de beneficios -->
-          <div class="hero-list">
-            <!--Item 01-->
-            <div class="hero-list-item">
+          <!-- Lista de beneficios de la empresa -->
+          <ul class="hero-list">
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Patronaje profesional
               </p>
-            </div>
-            <!--Item 02-->
-            <div class="hero-list-item">
+            </li>
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Graduación de tallas
               </p>
-            </div>
-            <!--Item 03-->
-            <div class="hero-list-item">
+            </li>
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Trazo con menor consumo
                 de tela
               </p>
-            </div>
-            <!--Item 04-->
-            <div class="hero-list-item">
+            </li>
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Impresión de trazos
               </p>
-            </div>
-            <!--Item 05-->
-            <div class="hero-list-item">
+            </li>
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Corte
               </p>
-            </div>
-            <!--Item 06-->
-            <div class="hero-list-item">
+            </li>
+            <li class="hero-list-item">
               <p class="hero-list-text">
                 <i class="fa-solid fa-circle-check"></i>Confección (en algunos
                 modelos)
               </p>
-            </div>
-          </div>
-          <!--Botones de acción-->
+            </li>
+          </ul>
+          <!-- Botones de llamada a la acción -->
           <div class="btn-hero-container">
             <a href="#" class="btn-hero-cotizar"
               >Solicitar cotización<i class="fa-solid fa-table-list"></i
@@ -131,7 +123,7 @@
               >Hablar por WhatsApp<i class="fa-brands fa-whatsapp"></i
             ></a>
           </div>
-          <!--Herramientas-->
+          <!-- Software y herramientas utilizadas -->
           <div class="hero-tools-container">
             <div class="hero-tool-item">
               <img
@@ -148,34 +140,28 @@
           </div>
         </div>
       </section>
-      <!--
-      ========================
-      SECCIÓN DE SOLUCIONES
-      ========================
-      -->
+
+      <!-- Sección de servicios de la empresa -->
       <section id="solutions-container-main">
-        <!--Texto soluciones-->
-        <div class="solutions-text-container">
-          <h4 id="solutions-title-main">NUESTROS SERVICIOS</h4>
-          <h2 id="solutions-title-secondary">
+        <!-- Encabezado de la sección servicios -->
+        <header class="solutions-text-container">
+          <h2 id="solutions-title-main">NUESTROS SERVICIOS</h2>
+          <p id="solutions-title-secondary">
             Soluciones integrales para la industria textil
-          </h2>
+          </p>
           <div id="flex-hr"><hr /></div>
-        </div>
-        <!--Soluciones-->
+        </header>
+        <!-- Grilla de tarjetas de servicios -->
         <div class="solutions-container">
-          <!--Item 01-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 01 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img
-                src="src/assets/pattern_hero.png"
+                src="#"
                 alt="Solución 1"
                 class="solution-image"
               />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">PATRONAJE</h3>
               <p class="solution-text">
@@ -184,16 +170,13 @@
                 todo tipo de prendas.
               </p>
             </div>
-          </div>
+          </article>
 
-          <!--Item 02-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 02 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img src="#" alt="Solución 2" class="solution-image" />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">GRADUACIÓN</h3>
               <p class="solution-text">
@@ -203,16 +186,13 @@
                 talla base.
               </p>
             </div>
-          </div>
+          </article>
 
-          <!--Item 03-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 03 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img src="#" alt="Solución 3" class="solution-image" />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">
                 TRAZO <br />
@@ -224,16 +204,13 @@
                 el consumo de tela
               </p>
             </div>
-          </div>
+          </article>
 
-          <!--Item 04-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 04 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img src="#" alt="Solución 1" class="solution-image" />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">
                 IMPRESIÓN <br />
@@ -245,16 +222,13 @@
                 de producción.
               </p>
             </div>
-          </div>
+          </article>
 
-          <!--Item 05-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 05 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img src="#" alt="Solución 1" class="solution-image" />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">CORTE</h3>
               <p class="solution-text">
@@ -263,16 +237,13 @@
                 de producción.
               </p>
             </div>
-          </div>
+          </article>
 
-          <!--Item 06-->
-          <div class="solution-item-container">
-            <!--Item-->
-            <div class="solution-item">
+          <!-- Servicio 06 -->
+          <article class="solution-item-container">
+            <figure class="solution-item">
               <img src="#" alt="Solución 1" class="solution-image" />
-            </div>
-
-            <!--Texto-->
+            </figure>
             <div class="solution-description">
               <h3 class="solution-title">CONFECCIÓN</h3>
               <p class="solution-text">
@@ -281,36 +252,32 @@
                 cantidades requeridas.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <!--
-========================
-  SECCIÓN TRABAJOS
-========================
--->
+      <!-- Sección de metodología de trabajo -->
       <section id="works-container-main">
         <div class="works-container">
-          <!-- Título -->
+          <!-- Encabezado de la metodología -->
           <div class="works-title-container">
             <h2 class="title-works">
-              <strong id="subtitle-works">¿CÓMO TRABAJAMOS?</strong>
+              <span id="subtitle-works">¿CÓMO TRABAJAMOS?</span>
               Nos adaptamos a la idea que tengas
             </h2>
           </div>
 
-          <!-- Contenedor de lista de ítems -->
+          <!-- Métodos de trabajo disponibles -->
           <div class="works-container-list">
-            <!-- Item 01 -->
-            <div class="work-item-container">
-              <div class="works-img-container">
+            <!-- Método 01 -->
+            <article class="work-item-container">
+              <figure class="works-img-container">
                 <img
                   src="ruta/a/fotografia.jpg"
                   alt="Evaluación de patrones en fotografías"
                   class="img-works"
                 />
-              </div>
+              </figure>
               <div class="works-container-text">
                 <h3 class="works-subtitle">FOTOGRAFÍAS</h3>
                 <p class="works-description">
@@ -319,17 +286,17 @@
                   del desarrollo del patrón.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <!-- Item 02 -->
-            <div class="work-item-container">
-              <div class="works-img-container">
+            <!-- Método 02 -->
+            <article class="work-item-container">
+              <figure class="works-img-container">
                 <img
                   src="ruta/a/prenda.jpg"
                   alt="Muestra de prendas físicas"
                   class="img-works"
                 />
-              </div>
+              </figure>
               <div class="works-container-text">
                 <h3 class="works-subtitle">PRENDAS FÍSICAS</h3>
                 <p class="works-description">
@@ -337,17 +304,17 @@
                   descoser la prenda.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <!-- Item 03 -->
-            <div class="work-item-container">
-              <div class="works-img-container">
+            <!-- Método 03 -->
+            <article class="work-item-container">
+              <figure class="works-img-container">
                 <img
                   src="ruta/a/tabla-medidas.jpg"
                   alt="Tabla de medidas y especificaciones técnicas"
                   class="img-works"
                 />
-              </div>
+              </figure>
               <div class="works-container-text">
                 <h3 class="works-subtitle">TABLAS DE MEDIDAS</h3>
                 <p class="works-description">
@@ -355,22 +322,19 @@
                   y tablas de medidas.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
-          <!-- Fin .works-container-list -->
         </div>
-        <!-- Fin .works-container -->
 
-        <!--Skills-->
+        <!-- Indicadores de logros y trayectoria -->
         <div class="items-works-container">
-          <!--skill 01-->
-
+          <!-- Métrica 01 -->
           <div class="item-works">
             <div class="image-works">
               <img src="#" alt="Icono" class="img-item" />
             </div>
             <div class="text-item-works">
-              <h6 class="item-title">20 +</h6>
+              <p class="item-title">20 +</p>
               <p class="description-item">
                 AÑOS DE <br />
                 EXPERIENCIA
@@ -378,14 +342,13 @@
             </div>
           </div>
 
-          <!--skill 02-->
-
+          <!-- Métrica 02 -->
           <div class="item-works">
             <div class="image-works">
               <img src="#" alt="Icono" class="img-item" />
             </div>
             <div class="text-item-works">
-              <h6 class="item-title">5000 +</h6>
+              <p class="item-title">5000 +</p>
               <p class="description-item">
                 PATRONES <br />
                 DESARROLLADOS
@@ -393,14 +356,13 @@
             </div>
           </div>
 
-          <!--skill 03-->
-
+          <!-- Métrica 03 -->
           <div class="item-works">
             <div class="image-works">
               <img src="#" alt="Icono" class="img-item" />
             </div>
             <div class="text-item-works">
-              <h6 class="item-title">10000 +</h6>
+              <p class="item-title">10000 +</p>
               <p class="description-item">
                 TRAZOS <br />
                 REALIZADOS
@@ -408,13 +370,13 @@
             </div>
           </div>
 
-          <!--skill 04-->
+          <!-- Métrica 04 -->
           <div class="item-works">
             <div class="image-works">
               <img src="#" alt="Icono" class="img-item" />
             </div>
             <div class="text-item-works">
-              <h6 class="item-title">100%</h6>
+              <p class="item-title">100%</p>
               <p class="description-item">
                 ATENCIÓN <br />
                 PERSONALIZADA
@@ -424,18 +386,15 @@
         </div>
       </section>
 
-      <!--
-      =======================
-       SECCIÓN DE PROCESO
-      =======================
-      -->
+      <!-- Sección del proceso de producción y cotizaciones -->
       <section class="process-container-main">
         <div class="precess-title-container">
           <h2 id="title-process">NUESTRO PROCESO</h2>
         </div>
-        <div class="process-container">
-          <!--Contenedor 01-->
-          <div class="container-icon-process">
+        <!-- Pasos interactivos del proceso -->
+        <ol class="process-container">
+          <!-- Paso 01 -->
+          <li class="container-icon-process">
             <div class="image-process">
               <img src="#" alt="imagen proceso" class="img-process" />
             </div>
@@ -443,20 +402,20 @@
               <img src="#" alt="flecha" class="arrow-icon" />
             </div>
             <div class="process-container-text">
-              <h6 class="title-text-process">
+              <h3 class="title-text-process">
                 ANALIZAMOS <br />
                 TU PROYECTO
-              </h6>
+              </h3>
               <p class="description-process">
                 Revisamos fotografías, <br />
                 muestras, tablas de <br />
                 medidas o especificaciones.
               </p>
             </div>
-          </div>
+          </li>
 
-          <!--Contenedor 02-->
-          <div class="container-icon-process">
+          <!-- Paso 02 -->
+          <li class="container-icon-process">
             <div class="image-process">
               <img src="#" alt="imagen proceso" class="img-process" />
             </div>
@@ -464,20 +423,20 @@
               <img src="#" alt="flecha" class="arrow-icon" />
             </div>
             <div class="process-container-text">
-              <h6 class="title-text-process">
+              <h3 class="title-text-process">
                 DESARROLLAMOS <br />
                 EL PATRÓN
-              </h6>
+              </h3>
               <p class="description-process">
                 Clasificamos cada modelo <br />
                 según su complejidad para <br />
                 obtener un resultado preciso.
               </p>
             </div>
-          </div>
+          </li>
 
-          <!--Contenedor 03-->
-          <div class="container-icon-process">
+          <!-- Paso 03 -->
+          <li class="container-icon-process">
             <div class="image-process">
               <img src="#" alt="imagen proceso" class="img-process" />
             </div>
@@ -485,20 +444,20 @@
               <img src="#" alt="flecha" class="arrow-icon" />
             </div>
             <div class="process-container-text">
-              <h6 class="title-text-process">
+              <h3 class="title-text-process">
                 GRADUAMOS <br />
                 LAS TALLAS
-              </h6>
+              </h3>
               <p class="description-process">
                 Escalamos el patrón <br />
                 conforme a tus <br />
                 necesidades.
               </p>
             </div>
-          </div>
+          </li>
 
-          <!--Contenedor 04-->
-          <div class="container-icon-process">
+          <!-- Paso 04 -->
+          <li class="container-icon-process">
             <div class="image-process">
               <img src="#" alt="imagen proceso" class="img-process" />
             </div>
@@ -506,20 +465,20 @@
               <img src="#" alt="flecha" class="arrow-icon" />
             </div>
             <div class="process-container-text">
-              <h6 class="title-text-process">
+              <h3 class="title-text-process">
                 GENERAMOS <br />
                 EL TRAZO
-              </h6>
+              </h3>
               <p class="description-process">
                 Optimizamos el acomodo <br />
                 para reducir el desperdicio <br />
                 de tela.
               </p>
             </div>
-          </div>
+          </li>
 
-          <!--Contenedor 05-->
-          <div class="container-icon-process">
+          <!-- Paso 05 -->
+          <li class="container-icon-process">
             <div class="image-process">
               <img src="#" alt="imagen proceso" class="img-process" />
             </div>
@@ -527,22 +486,21 @@
               <img src="#" alt="flecha" class="arrow-icon" />
             </div>
             <div class="process-container-text">
-              <h6 class="title-text-process">
+              <h3 class="title-text-process">
                 CORTE <br />
                 Y CONFECCIÓN
-              </h6>
+              </h3>
               <p class="description-process">
                 Si lo requieres, continuamos <br />
                 con el proceso de <br />
                 producción.
               </p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
 
-        <!--Segunda parte-->
+        <!-- Información sobre criterios de cotización -->
         <div class="process-container-secondary">
-          <!--Sección cotizar-->
           <div class="container-process-quote">
             <h3 class="title-quote">¿CÓMO COTIZAMOS?</h3>
             <p class="subtitle-description">
@@ -550,39 +508,41 @@
               El precio depende del servicio solicitado
             </p>
             <div class="list-secondary-quote">
-              <!--Patronaje-->
+              <!-- Criterio Patronaje -->
               <div class="patterns">
                 <div class="img-pattern">
                   <img src="#" alt="Patronaje" class="img-pattern-icon" />
                 </div>
                 <div class="pattern-text-container">
-                  <h6 id="title-pattern">PATRONAJE</h6>
+                  <h4 id="title-pattern">PATRONAJE</h4>
                   <p id="text-pattern">
                     Se calcula según la complejidad del modelo <br />
                     y el número de piezas.
                   </p>
                 </div>
               </div>
-              <!--Graduación-->
+
+              <!-- Criterio Graduación -->
               <div class="graduate">
                 <div class="img-graduate">
                   <img src="#" alt="Graduación" class="img-graduate-icon" />
                 </div>
                 <div class="graduate-text-container">
-                  <h6 id="title-graduate">PATRONAJE</h6>
+                  <h4 id="title-graduate">PATRONAJE</h4>
                   <p id="text-graduate">
                     Se cobra por cada talla desarrollada <br />
                     a partir de la talla base.
                   </p>
                 </div>
               </div>
-              <!--Trazo-->
+
+              <!-- Criterio Trazo -->
               <div class="trace">
                 <div class="img-trace">
                   <img src="#" alt="Trazo" class="img-trace-icon" />
                 </div>
                 <div class="trace-text-container">
-                  <h6 id="title-trace">TRAZO</h6>
+                  <h4 id="title-trace">TRAZO</h4>
                   <p id="text-trace">
                     Se cotiza por cada trazo generado. Si es una prenda <br />
                     requiere diferente combinaciones de tela, <br />
@@ -590,19 +550,20 @@
                   </p>
                 </div>
               </div>
-              <!--Corte-->
+
+              <!-- Criterio Corte -->
               <div class="cutting">
                 <div class="img-cutting">
                   <img src="#" alt="Corte" class="img-cutting-icon" />
                 </div>
                 <div class="cutting-text-container">
-                  <h6 id="title-cutting">CORTE Y CONFECCIÓN</h6>
+                  <h4 id="title-cutting">CORTE Y CONFECCIÓN</h4>
                   <p id="text-cutting">
                     El precio depende del volumen, dificultad <br />
                     y tipo de prenda.
                   </p>
                 </div>
-                <!--Botón-->
+                <!-- Información sobre pedidos mínimos -->
                 <div class="container-btn-quote">
                   <p id="btn-quote">
                     Trabajamos con volumenes minímos de 100 piezas
@@ -610,50 +571,44 @@
                 </div>
               </div>
 
-              <!--Sección de recomendaciones-->
-              <div class="recommend-container">
+              <!-- Bloque de sugerencias técnicas -->
+              <aside class="recommend-container">
                 <h3 id="title-recommend">RECOMENDACIONES</h3>
                 <p id="text-recommend">
                   Antes de iniciar producción recomendamos realizar una muestra.
                 </p>
-                <!--lista recomendaciones-->
-                <div class="lyst-recommend">
-                  <!--01-->
-                  <div class="icon-recommend">
+                <!-- Lista de puntos a considerar -->
+                <ul class="lyst-recommend">
+                  <li class="icon-recommend">
                     <i class="fa-solid fa-circle-check"></i>
                     Verificar el ajuste de la prenda
-                  </div>
-                  <!--02-->
-                  <div class="icon-recommend">
+                  </li>
+                  <li class="icon-recommend">
                     <i class="fa-solid fa-circle-check"></i>
                     Confirmar la comodidad del diseño
-                  </div>
-                  <!--03-->
-                  <div class="icon-recommend">
+                  </li>
+                  <li class="icon-recommend">
                     <i class="fa-solid fa-circle-check"></i>
                     Evaluar el ...... de la tela
-                  </div>
-                  <!--04-->
-                  <div class="icon-recommend">
+                  </li>
+                  <li class="icon-recommend">
                     <i class="fa-solid fa-circle-check"></i>
                     Detectar posible ajustes antes <br />
                     de fabricar en volumen.
-                  </div>
-                  <!--Recuadro-->
-                  <div class="container-recommend-extra">
-                    Recomendamos que las muestras se confeccionen <br />
-                    utilizando la misma tela que se empleará <br />
-                    en la producción final.
-                  </div>
-                </div>
-                <!--Imagen de fondo-->
-                <div class="image-bg-recommend">
+                  </li>
+                </ul>
+                <aside class="container-recommend-extra">
+                  Recomendamos que las muestras se confeccionen <br />
+                  utilizando la misma tela que se empleará <br />
+                  en la producción final.
+                </aside>
+                <figure class="image-bg-recommend">
                   <img src="#" alt="Imagen de fondo" class="img-recommend" />
-                </div>
-              </div>
+                </figure>
+              </aside>
             </div>
 
-            <!--Programas-->
+            <!-- Información sobre tecnología empleada -->
             <div class="container-programs">
               <h3 id="title-programs">
                 TRABAJAMOS <br />
@@ -664,7 +619,7 @@
                 para garantizar precisión, velocidad <br />
                 y eficiencia en cada proceso.
               </p>
-              <!--Logos-->
+              <!-- Galería de marcas de software -->
               <div class="logo-container">
                 <div class="lectra-img-container">
                   <img src="#" alt="LECTRA" class="img-lectra" />
@@ -681,72 +636,68 @@
         </div>
       </section>
 
-      <!--
-      ===========================
-      SECCIÓN DE PREGUNTAS
-      ==========================
-      -->
-      <srction class="questions-main-container">
-        <h3 id="title-questions">PREGUNTAS FRECUENTES</h3>
-        <!--01-->
-        <div class="questions-container">
-          <h4 class="title-main">
+      <!-- Sección de Preguntas Frecuentes (FAQ) -->
+      <section class="questions-main-container">
+        <h2 id="title-questions">PREGUNTAS FRECUENTES</h2>
+        
+        <!-- Pregunta 01 -->
+        <details class="questions-container">
+          <summary class="title-main">
             <i class="fa-regular fa-circle-question"></i>
             ¿Puden trabajar solo <br />
             con fotografías?
-          </h4>
+          </summary>
           <p class="description-question">
             Si. Evaluamos la complejidad del <br />
             diseño y la calidad de las imágenes <br />
             para determinar la vialidad del <br />
             desarrollo del patrón.
           </p>
-        </div>
-        <!--02-->
-        <div class="questions-container">
-          <h4 class="title-main">
+        </details>
+
+        <!-- Pregunta 02 -->
+        <details class="questions-container">
+          <summary class="title-main">
             <i class="fa-regular fa-circle-question"></i>
             ¿Tiene producción mínimia?
-          </h4>
+          </summary>
           <p class="description-question">
             Si. Trabajamos con volúmenes <br />
             mínimos de 100 piezas.
           </p>
-        </div>
-        <!--03-->
-        <div class="questions-container">
-          <h4 class="title-main">
+        </details>
+
+        <!-- Pregunta 03 -->
+        <details class="questions-container">
+          <summary class="title-main">
             <i class="fa-regular fa-circle-question"></i>
             ¿Solo ofrecen patronaje?
-          </h4>
+          </summary>
           <p class="description-question">
             No. Puedes contratar únicamente <br />
             el servicio que necesites o un <br />
             proceso completo.
           </p>
-        </div>
-        <!--04-->
-        <div class="questions-container">
-          <h4 class="title-main">
+        </details>
+
+        <!-- Pregunta 04 -->
+        <details class="questions-container">
+          <summary class="title-main">
             <i class="fa-regular fa-circle-question"></i>
             ¿Donde están ubicados?
-          </h4>
+          </summary>
           <p class="description-question">
             Estamos en Guadalajara, Jalisco. <br />
             Con gusto te atenderemos en <br />
             nuestras instalaciones.
           </p>
-        </div>
-      </srction>
+        </details>
+      </section>
     </main>
 
-    <!--
-    =====================
-     SECCIÓN DE FOOTER
-    =====================
-    -->
+    <!-- Pie de página con datos de contacto -->
     <footer class="container-footer">
-      <!--Descripción-->
+      <!-- Mensaje de cierre y contacto -->
       <div class="footer-description-container">
         <h2 id="title-footer">¿Listo para comenzar tu proyecto?</h2>
         <p id="description-footer">
@@ -757,7 +708,8 @@
           Contáctanos y recibe asesoría personalizada.
         </p>
       </div>
-      <!--Links-->
+
+      <!-- Enlaces directos y datos geográficos -->
       <div class="footer-botons-container">
         <div class="footer-boton-whatsapp">
           <a href="#" class="link-to-whatsapp">
@@ -771,9 +723,9 @@
             <i class="fa-solid fa-table-list"></i>
           </a>
         </div>
-        <!--Información-->
-        <div class="container-description">
-          <!--Localización-->
+
+        <!-- Dirección física y datos corporativos -->
+        <address class="container-description">
           <div class="location-container">
             <p id="location-text">
               <i class="fa-solid fa-location-dot"></i>
@@ -781,23 +733,22 @@
               COLONIA MODERNA C.P. 44190 GUADALAJARA JALISCO C.P. 44190, MÉXICO.
             </p>
           </div>
-          <!--Número-->
           <div class="container-number">
             <p id="text-number">
               <i class="fa-solid fa-phone"></i>
               (33) 36503946
             </p>
           </div>
-          <!--Email-->
           <div class="email-container">
             <p id="email-text">
               <i class="fa-solid fa-envelope"></i>
               contacto@patraco.com.mx
             </p>
           </div>
-        </div>
-        <!--Mapa-->
-        <div class="map-container">
+        </address>
+
+        <!-- Ubicación Google Maps -->
+        <figure class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7466.36559040277!2d-103.36722060469685!3d20.662140912343563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2069f16e143%3A0x3017071fbc318e2c!2sPatraco%20GALMOSSA%20SA%20DE%20CV!5e0!3m2!1ses-419!2smx!4v1786575974152!5m2!1ses-419!2smx"
             width="600"
@@ -805,9 +756,10 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            title="Ubicación Patraco en Google Maps"
             referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
-        </div>
+        </figure>
       </div>
     </footer>
   </body>
