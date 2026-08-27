@@ -364,8 +364,22 @@
   .solution-item-container:hover {
     transform: scale(1.1);
   }
+  /* Imagenes de las tarjetas de servicios */
+  .solution-item {
+    margin-top: 20px;
+  }
+  .solution-image {
+    height: 200px;
+    width: auto;
+    background-image: url("src/assets/serives_patterns-removebg-preview.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
 
-  /* Tipografía de las tarjetas de servicios */
+  /* Texto de las tarjetas de servicios */
+  .solution-description {
+    margin-top: 30px;
+  }
   .solution-title {
     font-family: var(--font-main);
     font-size: 18px;
