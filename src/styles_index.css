@@ -26,7 +26,7 @@
 }
 
 /* Adaptación para pantallas medianas y grandes */
-@media screen and (min-width: 900px) and (max-width: 1900px) {
+@media screen and (min-width: 900px) and (max-width: 2500px) {
 
   /* Encabezado fijo superior */
   .header_container {
