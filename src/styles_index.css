@@ -433,32 +433,49 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
   }
   .work-item-container {
     width: 400px;
-    height: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  /* Imagenes principales de metodología */
+  .works-img-container {
+    margin-top: 190px;
+    display: block;
+    position: absolute;
+  }
+  .img-works {
+    position: relative;
+    height: auto;
+    width: 800px;
+    background-image: url('src/assets/works_photos.psd.webp');
+  }
   /* Texto de las tarjetas */
   .works-container-text {
     text-align: center;
-    color: var(--main-text);
+    margin-top: 0%;
   }
   .works-subtitle {
     font-family: var(--font-main);
     font-size: 20px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 10px;
+
+    color: var(--hover-text);
   }
   .works-description {
     font-family: var(--font-second);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+
+    color: var(--main-text);
   }
 
   /* Imagen de logros */
