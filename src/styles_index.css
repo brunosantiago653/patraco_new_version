@@ -25,8 +25,8 @@
   padding: 0;
 }
 
-/* Adaptación para pantallas medianas y grandes */
-@media screen and (min-width: 900px) and (max-width: 2500px) {
+/* Adaptación para monitores y escritorio */
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
 
   /* Encabezado fijo superior */
   .header_container {
@@ -151,7 +151,7 @@
 
   /* Imagen de fondo hero */
   .image-hero {
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     background-image: url("src/assets/hero_image_bg.png");
     background-repeat: no-repeat;
@@ -490,4 +490,501 @@
     object-fit: cover;
   }
 
+}
+
+/* Adaptación para laptops */
+@media screen and (min-width: 760px) and (max-width: 1900px) {
+
+  /* Encabezado fijo superior */
+  .header_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--general-bg);
+  }
+
+  /* Contenedor principal del encabezado */
+  .header_container_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--general-bg);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Logotipo principal */
+  .logo-container {
+    display: block;
+    align-items: center;
+    margin-left: 120px;
+    padding: 10px 30px;
+  }
+
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+
+  /* Lista de navegación principal */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  /* Elementos de la lista */
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  /* Enlaces estándar del menú */
+  .link-menu {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-text);
+    text-decoration: none;
+    list-style: none;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Línea animada inferior en hover de los links o enlaces (IA)*/
+  .link-menu::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--hover-text);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Estado  de enlaces */
+  .link-menu:hover {
+    color: var(--hover-text);
+    transform: translateY(-2px);
+  }
+
+  .link-menu:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* Botón  de WhatsApp */
+  .link-menu-whatsapp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    background-color: var(--whastsapp-bg);
+    font-family: var(--font-second);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+  }
+
+  .link-menu-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+  }
+
+  /* Sección de hero */
+  .hero-container-main {
+    position: relative;
+    padding-top: 120px;
+    margin: 0;
+  }
+
+  /* Contenedor de imagen de fondo */
+  .image-container-hero {
+    position: absolute;
+    z-index: -999;
+  }
+
+  /* Imagen de fondo hero */
+  .image-hero {
+    height: 110vh;
+    margin: 0;
+    background-image: url("src/assets/hero_image_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  /* Bloque de textos hero */
+  .hero-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  /* Título principal de hero */
+  .hero-title {
+    font-family: var(--font-main);
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--main-text);
+    text-align: justify;
+  }
+
+  #hero-title-strong {
+    font-weight: 600;
+    color: var(--hover-text);
+  }
+
+  /* Descripción secundaria hero */
+  .hero-text {
+    margin-top: 18px;
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--main-text);
+  }
+
+  /* Rejilla de características hero */
+  .hero-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+
+  .hero-list-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-text);
+  }
+
+  /* Contenedor de botones de llamada a la acción */
+  .btn-hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* Botón de solicitud de cotización */
+  .btn-hero-cotizar {
+    padding: 12px 18px;
+    border-radius: 5px;
+    background-color: var(--hover-bg);
+    font-family: var(--font-second);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+  }
+
+  .btn-hero-cotizar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 14px 0 rgba(0, 123, 255, 0.4);
+  }
+
+  /* Botón de WhatsApp en hero */
+  .btn-hero-whatsapp {
+    padding: 12px 18px;
+    border-radius: 5px;
+    background-color: var(--whastsapp-bg);
+    font-family: var(--font-second);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+  }
+
+  .btn-hero-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+  }
+
+  /* Tarjeta de herramientas y software */
+  .hero-tools-container {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: var(--main-bg);
+    color: var(--secondary-text);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-tool-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .hero-tool-image {
+    width: 80px;
+    height: auto;
+    background-image: url("src/assets/lectra_logo-removebg-preview.png");
+    object-fit: cover;
+  }
+
+  .hero-tool-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-tool-text {
+    font-family: var(--font-second);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* Sección general de servicios */
+  #solutions-container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 100px;
+  }
+
+  /* Textos de la sección */
+  .solutions-text-container {
+    margin-top: 40px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  #solutions-title-main {
+    font-family: var(--font-second);
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--hover-text);
+  }
+
+  #solutions-title-secondary {
+    font-family: var(--font-second);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-text);
+  }
+
+  #flex-hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  hr {
+    width: 100px;
+    font-weight: bold;
+    color: var(--main-text);
+  }
+
+  /* Rejilla/Lista de tarjetas de servicios */
+  .solutions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 35px;
+  }
+
+  /* Tarjeta individual de servicio */
+  .solution-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #f0e9e9;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.7s ease;
+  }
+
+  .solution-item-container:hover {
+    transform: scale(1.1);
+  }
+  /* Imagenes de las tarjetas de servicios */
+  .solution-item {
+    margin-top: 20px;
+  }
+  .solution-image {
+    height: 200px;
+    width: auto;
+    background-image: url("src/assets/serives_patterns-removebg-preview.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Texto de las tarjetas de servicios */
+  .solution-description {
+    margin-top: 30px;
+  }
+  .solution-title {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--hover-text);
+    text-align: center;
+  }
+
+  .solution-text {
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--main-text);
+    text-align: center;
+  }
+
+  /* Sección general de metodología de trabajo */
+  #works-container-main {
+    padding-top: 100px;
+
+  }
+  .works-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Encabezados */
+  .title-works {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-weight:550;
+    color: var(--hover-text);
+
+    text-align: center;
+    margin-top: 20px;
+  }
+  #text-main-wroks {
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-text);
+
+    text-align: center;
+  }
+
+  /* Tarjetas de metodología de trabajo */
+  #works-container-main {
+    margin-top: 40px;
+  }
+  .works-container-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .work-item-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Imagenes principales de metodología */
+  .works-img-container {
+    margin-top: 190px;
+    display: block;
+    position: absolute;
+  }
+  .img-works {
+    position: relative;
+    height: auto;
+    width: 800px;
+    background-image: url('src/assets/works_photos.psd.webp');
+  }
+  /* Texto de las tarjetas */
+  .works-container-text {
+    text-align: center;
+    margin-top: 0%;
+  }
+  .works-subtitle {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+
+    color: var(--hover-text);
+  }
+  .works-description {
+    font-family: var(--font-second);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: var(--main-text);
+  }
+
+  /* Imagen de logros */
+  .items-works-container {
+    margin-top: 120px;
+  }
+  .achievements-container-image {
+    margin-top: 15px;
+  }
+  .achievements-img {
+    width: 100%;
+    height: 120px;
+    background-image: url(src/assets/works_image_patraco.jpeg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  /* Sección de proceso de producción */
+  #process-container-main {
+    margin-top: 90px;
+  }
+
+  /* Titulo de la sección */
+  .precess-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #title-process {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-weight: 550;
+    color: var(--hover-text);
+  }
+  /* Imagen de fondo */
+  .img-process {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+  }
 }
