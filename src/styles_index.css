@@ -983,8 +983,61 @@
   /* Imagen de fondo */
   .img-process {
     width: 100%;
-    max-width: 100%;
+    max-width: 1740px;
     height: auto;
     background-repeat: no-repeat;
+  }
+
+  /* Cartas de proceso de producción */
+  .process-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .process-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Titulo de las cartas de proceso de producción */
+  .title-text-process {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--hover-text);
+    text-align: center;
+  }
+  /* Descripción de las cartas de proceso de producción */
+  .description-process {
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--main-text);
+    text-align: center;
+
+    margin-top: 10px;
+  }
+
+  /* Sección de cotización */
+  .process-container-secondary {
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Cartas de cotización */
+  /* Textos de la sección de cotización */
+  .title-quote {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--hover-text);
   }
 }
