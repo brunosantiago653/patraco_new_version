@@ -27,7 +27,6 @@
 
 /* Adaptación para monitores y escritorio */
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
-
   /* Encabezado fijo superior */
   .header_container {
     position: fixed;
@@ -87,7 +86,9 @@
     color: var(--main-text);
     text-decoration: none;
     list-style: none;
-    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Línea animada inferior en hover de los links o enlaces (IA)*/
@@ -129,12 +130,16 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .link-menu-whatsapp:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Sección de hero */
@@ -229,7 +234,9 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-cotizar:hover {
@@ -247,12 +254,16 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-whatsapp:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Tarjeta de herramientas y software */
@@ -266,7 +277,9 @@
     border-radius: 15px;
     background-color: var(--main-bg);
     color: var(--secondary-text);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.08),
+      0 4px 6px -4px rgba(0, 0, 0, 0.08);
   }
 
   .hero-tool-item {
@@ -356,7 +369,9 @@
     height: 400px;
     border-radius: 15px;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: transform 0.7s ease;
   }
@@ -410,7 +425,7 @@
   .title-works {
     font-family: var(--font-main);
     font-size: 28px;
-    font-weight:550;
+    font-weight: 550;
     color: var(--hover-text);
 
     text-align: center;
@@ -454,7 +469,7 @@
     position: relative;
     height: auto;
     width: 800px;
-    background-image: url('src/assets/works_photos.psd.webp');
+    background-image: url("src/assets/works_photos.psd.webp");
   }
   /* Texto de las tarjetas */
   .works-container-text {
@@ -489,12 +504,10 @@
     background-repeat: no-repeat;
     object-fit: cover;
   }
-
 }
 
 /* Adaptación para laptops */
 @media screen and (min-width: 760px) and (max-width: 1900px) {
-
   /* Encabezado fijo superior */
   .header_container {
     position: fixed;
@@ -555,7 +568,9 @@
     color: var(--main-text);
     text-decoration: none;
     list-style: none;
-    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Línea animada inferior en hover de los links o enlaces (IA)*/
@@ -597,12 +612,16 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .link-menu-whatsapp:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Sección de hero */
@@ -698,7 +717,9 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-cotizar:hover {
@@ -716,12 +737,16 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-whatsapp:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Tarjeta de herramientas y software */
@@ -735,7 +760,9 @@
     border-radius: 15px;
     background-color: var(--main-bg);
     color: var(--secondary-text);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.08),
+      0 4px 6px -4px rgba(0, 0, 0, 0.08);
   }
 
   .hero-tool-item {
@@ -824,7 +851,9 @@
     height: 400px;
     border-radius: 15px;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: transform 0.7s ease;
   }
@@ -868,7 +897,6 @@
   /* Sección general de metodología de trabajo */
   #works-container-main {
     padding-top: 100px;
-
   }
   .works-container {
     display: flex;
@@ -880,7 +908,7 @@
   .title-works {
     font-family: var(--font-main);
     font-size: 28px;
-    font-weight:550;
+    font-weight: 550;
     color: var(--hover-text);
 
     text-align: center;
@@ -924,7 +952,7 @@
     position: relative;
     height: auto;
     width: 800px;
-    background-image: url('src/assets/works_photos.psd.webp');
+    background-image: url("src/assets/works_photos.psd.webp");
   }
   /* Texto de las tarjetas */
   .works-container-text {
@@ -1044,7 +1072,9 @@
     margin-left: 20px;
 
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
 
   /* Contenido de cotización */
@@ -1107,14 +1137,15 @@
     flex-direction: column;
     justify-content: center;
 
-
     height: 470px;
     width: 470px;
     padding: 20px 30px;
     margin-right: 390px;
 
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
   /* Contenido de la sección de recomendaciones */
   .title-tips {
@@ -1153,7 +1184,7 @@
     color: var(--main-text);
   }
 
-  .fa-solid,  
+  .fa-solid,
   .fa-circle-check {
     color: var(--hover-text);
   }
@@ -1169,7 +1200,9 @@
     height: -470px;
     width: 315px;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
   /* Contenido de la sección de herramientas */
   .title-tools {
@@ -1210,7 +1243,7 @@
     object-fit: cover;
   }
   .img-tools-modaris {
-        width: 150px;
+    width: 150px;
     height: auto;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -1242,9 +1275,50 @@
   }
   .questions-container {
     background-color: #f9f9f9;
-       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
-    height: 120px;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
+
+    height: 90px;
     width: 200px;
     padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+  }
+  .questions-container:hover {
+    transform: scale(1.1);
+    transition: 0.8s ease;
+  }
+  .title-main {
+    color: var(--hover-text);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .description-question {
+    font-family: var(--font-second);
+    color: var(--main-text);
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+  }
+
+  /* Estilos para el footer */
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+
+    background-color: var(--main-bg);
+    color: var(--secondary-text);
   }
 }
