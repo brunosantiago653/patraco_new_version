@@ -5,13 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>patraco | Tecnología en patronaje, trazo y corte textil</title>
+    <meta
+      name="description"
+      content="Desarrollamos soluciones de patronaje profesional, graduación de tallas, trazo computarizado, corte y confección textil en Guadalajara con sistema LECTRA."
+    />
+    <link rel="canonical" href="https://patraco.com.mx/" />
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="patraco | Tecnología en patronaje, trazo y corte textil"
+    />
+    <meta
+      property="og:description"
+      content="Soluciones integrales para la industria textil con más de 20 años de experiencia."
+    />
+    <meta property="og:image" content="/assets/patraco_logo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/patraco_logo.png" />
 
     <!-- Scripts y estilos -->
     <script src="src/script_index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/2a3f562a19.js"
       crossorigin="anonymous"
-    ></script>
+      defer></script>
     <link rel="stylesheet" href="src/styles_index.css" />
   </head>
   <body>
@@ -21,13 +41,15 @@
         <!-- Logotipo de la marca -->
         <div class="logo-container">
           <img
-            src="/public/assets/patraco_logo.png"
-            alt="Logo de Patraco"
+            src="/assets/patraco_logo.png"
+            alt="Logo de Patraco - Tecnología textil"
             class="logo"
+            width="180"
+            height="50"
           />
         </div>
         <!-- Menú de navegación principal -->
-        <nav class="navbar_container">
+        <nav class="navbar_container" aria-label="Navegación principal">
           <ul class="navbar">
             <li><a href="index.html" class="link-menu">Inicio</a></li>
             <li>
@@ -43,8 +65,13 @@
             <li><a href="nosotros.html" class="link-menu">Nosotros</a></li>
             <li><a href="contacto.html" class="link-menu">Contacto</a></li>
             <li>
-              <a href="#" class="link-menu-whatsapp" target="_blank"
-                ><i class="fa-brands fa-whatsapp"></i>WhatsApp</a
+              <a
+                href="#"
+                class="link-menu-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-whatsapp" aria-hidden="true"
+                ></i>WhatsApp</a
               >
             </li>
           </ul>
@@ -59,9 +86,10 @@
         <!-- Imagen gráfica de portada -->
         <figure class="image-container-hero">
           <img
-            src="/public/assets/hero_image_bg.png"
-            alt="Imagen de fondo"
+            src="/assets/hero_image_bg.png"
+            alt="Taller de patronaje, trazo y corte textil especializado"
             class="image-hero"
+            loading="eager"
           />
         </figure>
         <!-- Información de presentación hero -->
@@ -83,53 +111,65 @@
           <ul class="hero-list">
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Patronaje profesional
+                <i class="fa-solid fa-circle-check" aria-hidden="true"
+                ></i>Patronaje profesional
               </p>
             </li>
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Graduación de tallas
+                <i class="fa-solid fa-circle-check" aria-hidden="true"
+                ></i>Graduación de tallas
               </p>
             </li>
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Trazo con menor consumo
-                de tela
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>Trazo
+                con menor consumo de tela
               </p>
             </li>
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Impresión de trazos
+                <i class="fa-solid fa-circle-check" aria-hidden="true"
+                ></i>Impresión de trazos
               </p>
             </li>
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Corte
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>Corte
               </p>
             </li>
             <li class="hero-list-item">
               <p class="hero-list-text">
-                <i class="fa-solid fa-circle-check"></i>Confección (en algunos
-                modelos)
+                <i class="fa-solid fa-circle-check" aria-hidden="true"
+                ></i>Confección (en algunos modelos)
               </p>
             </li>
           </ul>
           <!-- Botones de llamada a la acción -->
           <div class="btn-hero-container">
             <a href="#" class="btn-hero-cotizar"
-              >Solicitar cotización<i class="fa-solid fa-table-list"></i
-            ></a>
-            <a href="#" class="btn-hero-whatsapp"
-              >Hablar por WhatsApp<i class="fa-brands fa-whatsapp"></i
-            ></a>
+              >Solicitar cotización<i
+                class="fa-solid fa-table-list"
+                aria-hidden="true"></i></a
+            >
+            <a
+              href="#"
+              class="btn-hero-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Hablar por WhatsApp<i
+                class="fa-brands fa-whatsapp"
+                aria-hidden="true"></i></a
+            >
           </div>
           <!-- Software y herramientas utilizadas -->
           <div class="hero-tools-container">
             <div class="hero-tool-item">
               <img
-                src="/public/assets/lectra_logo-removebg-preview.png"
-                alt="Herramienta 1"
+                src="/assets/lectra_logo-removebg-preview.png"
+                alt="Logo del software LECTRA Modarís | Diamino"
                 class="hero-tool-image"
+                loading="lazy"
               />
             </div>
             <div class="hero-tool-description">
@@ -156,7 +196,12 @@
           <!-- Servicio 01 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_pattern.webp" alt="Solución 1" class="solution-image" />
+              <img
+                src="/assets/services_pattern.webp"
+                alt="Servicio de patronaje profesional de ropa"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">PATRONAJE</h3>
@@ -171,7 +216,12 @@
           <!-- Servicio 02 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_graduate-1.webp" alt="Solución 2" class="solution-image" />
+              <img
+                src="/assets/services_graduate-1.webp"
+                alt="Servicio de graduación y escalado de tallas textiles"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">GRADUACIÓN</h3>
@@ -187,7 +237,12 @@
           <!-- Servicio 03 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_trace.webp" alt="Solución 3" class="solution-image" />
+              <img
+                src="/assets/services_trace.webp"
+                alt="Servicio de trazo computarizado para telas"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">
@@ -205,7 +260,12 @@
           <!-- Servicio 04 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_printer.webp" alt="Solución 1" class="solution-image" />
+              <img
+                src="/assets/services_printer.webp"
+                alt="Impresión de trazos en plotter para confección"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">
@@ -223,7 +283,12 @@
           <!-- Servicio 05 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_cut.webp" alt="Solución 1" class="solution-image" />
+              <img
+                src="/assets/services_cut.webp"
+                alt="Servicio de corte de tela para producción textil"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">CORTE</h3>
@@ -238,7 +303,12 @@
           <!-- Servicio 06 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img src="/public/assets/services_making.webp" alt="Solución 1" class="solution-image" />
+              <img
+                src="/assets/services_making.webp"
+                alt="Servicio de confección y maquila de prendas"
+                class="solution-image"
+                loading="lazy"
+              />
             </figure>
             <div class="solution-description">
               <h3 class="solution-title">CONFECCIÓN</h3>
@@ -258,7 +328,9 @@
           <!-- Encabezado de la metodología -->
           <div class="works-title-container">
             <h2 class="title-works">¿CÓMO TRABAJAMOS?</h2>
-            <p id="text-main-wroks">Nos adaptamos a la información que tengas</p>
+            <p id="text-main-wroks">
+              Nos adaptamos a la información que tengas
+            </p>
           </div>
 
           <!-- Métodos de trabajo disponibles -->
@@ -268,8 +340,9 @@
               <figure class="works-img-container">
                 <img
                   src="src/assets/works_photos.psd.webp"
-                  alt="Evaluación de patrones en fotografías"
+                  alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
+                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -287,8 +360,9 @@
               <figure class="works-img-container">
                 <img
                   src="ruta/a/prenda.jpg"
-                  alt="Muestra de prendas físicas"
+                  alt="Desarrollo de patrones a partir de prendas físicas"
                   class="img-works"
+                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -305,8 +379,9 @@
               <figure class="works-img-container">
                 <img
                   src="ruta/a/tabla-medidas.jpg"
-                  alt="Tabla de medidas y especificaciones técnicas"
+                  alt="Creación de patrones mediante tabla de medidas y especificaciones técnicas"
                   class="img-works"
+                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -323,7 +398,12 @@
         <!-- Indicadores de logros y trayectoria -->
         <div class="items-works-container">
           <figure class="achievements-container-image">
-            <img src="/public/assets/works_image_patraco.jpeg" class="achievements-img" alt="logros">
+            <img
+              src="/assets/works_image_patraco.jpeg"
+              class="achievements-img"
+              alt="Instalaciones de Patraco y trayectoria en la industria textil"
+              loading="lazy"
+            />
           </figure>
         </div>
       </section>
@@ -333,9 +413,14 @@
         <div class="precess-title-container">
           <h2 id="title-process">NUESTRO PROCESO</h2>
         </div>
-          <div class="image-process">
-              <img src="/public/assets/proccess_hero.png" alt="imagen proceso" class="img-process" />
-            </div>
+        <div class="image-process">
+          <img
+            src="/assets/proccess_hero.png"
+            alt="Infografía del proceso de producción textil en Patraco"
+            class="img-process"
+            loading="lazy"
+          />
+        </div>
         <!-- Pasos interactivos del proceso -->
         <ol class="process-container">
           <!-- Paso 01 -->
@@ -413,140 +498,141 @@
             </div>
           </li>
         </ol>
+      </section>
 
-        <!-- Información sobre criterios de cotización -->
-        <div class="process-container-secondary">
-          <div class="container-process-quote">
-            <h3 class="title-quote">¿CÓMO COTIZAMOS?</h3>
-            <p class="subtitle-description">
-              Cada proyecto es diferente. <br />
-              El precio depende del servicio solicitado
-            </p>
-            <div class="list-secondary-quote">
-              <!-- Criterio Patronaje -->
-              <div class="patterns">
-                <div class="img-pattern">
-                  <img src="#" alt="Patronaje" class="img-pattern-icon" />
-                </div>
-                <div class="pattern-text-container">
-                  <h4 id="title-pattern">PATRONAJE</h4>
-                  <p id="text-pattern">
-                    Se calcula según la complejidad del modelo <br />
-                    y el número de piezas.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Criterio Graduación -->
-              <div class="graduate">
-                <div class="img-graduate">
-                  <img src="#" alt="Graduación" class="img-graduate-icon" />
-                </div>
-                <div class="graduate-text-container">
-                  <h4 id="title-graduate">PATRONAJE</h4>
-                  <p id="text-graduate">
-                    Se cobra por cada talla desarrollada <br />
-                    a partir de la talla base.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Criterio Trazo -->
-              <div class="trace">
-                <div class="img-trace">
-                  <img src="#" alt="Trazo" class="img-trace-icon" />
-                </div>
-                <div class="trace-text-container">
-                  <h4 id="title-trace">TRAZO</h4>
-                  <p id="text-trace">
-                    Se cotiza por cada trazo generado. Si es una prenda <br />
-                    requiere diferente combinaciones de tela, <br />
-                    pueden generarse varios trazos
-                  </p>
-                </div>
-              </div>
-
-              <!-- Criterio Corte -->
-              <div class="cutting">
-                <div class="img-cutting">
-                  <img src="#" alt="Corte" class="img-cutting-icon" />
-                </div>
-                <div class="cutting-text-container">
-                  <h4 id="title-cutting">CORTE Y CONFECCIÓN</h4>
-                  <p id="text-cutting">
-                    El precio depende del volumen, dificultad <br />
-                    y tipo de prenda.
-                  </p>
-                </div>
-                <!-- Información sobre pedidos mínimos -->
-                <div class="container-btn-quote">
-                  <p id="btn-quote">
-                    Trabajamos con volumenes minímos de 100 piezas
-                  </p>
-                </div>
-              </div>
-
-              <!-- Bloque de sugerencias técnicas -->
-              <aside class="recommend-container">
-                <h3 id="title-recommend">RECOMENDACIONES</h3>
-                <p id="text-recommend">
-                  Antes de iniciar producción recomendamos realizar una muestra.
+      <!--Sección de cotizaciones -->
+      <section class="container-main-quote">
+        <!--Contenedor de cotizaciones -->
+        <div class="container-quote">
+          <h3 class="title-quote">¿CÓMO COTIZAMOS?</h3>
+          <p class="desciption-quote">
+            Cada proyecto es diferente. <br />
+            El precio depende del servicio solicitado.
+          </p>
+          <div class="list-container-quote">
+            <ul class="list-quote">
+              <!--Elemento 01 -->
+              <li class="item-quote">
+                <div class="item-img-quote"></div>
+                <h4 class="item-quote-title">PATRONAJE</h4>
+                <p class="item-quote-description">
+                  Se calcula según la complejidad del modelo <br />
+                  y el número de piezas.
                 </p>
-                <!-- Lista de puntos a considerar -->
-                <ul class="lyst-recommend">
-                  <li class="icon-recommend">
-                    <i class="fa-solid fa-circle-check"></i>
-                    Verificar el ajuste de la prenda
-                  </li>
-                  <li class="icon-recommend">
-                    <i class="fa-solid fa-circle-check"></i>
-                    Confirmar la comodidad del diseño
-                  </li>
-                  <li class="icon-recommend">
-                    <i class="fa-solid fa-circle-check"></i>
-                    Evaluar el ...... de la tela
-                  </li>
-                  <li class="icon-recommend">
-                    <i class="fa-solid fa-circle-check"></i>
-                    Detectar posible ajustes antes <br />
-                    de fabricar en volumen.
-                  </li>
-                </ul>
-                <aside class="container-recommend-extra">
-                  Recomendamos que las muestras se confeccionen <br />
-                  utilizando la misma tela que se empleará <br />
-                  en la producción final.
-                </aside>
-                <figure class="image-bg-recommend">
-                  <img src="#" alt="Imagen de fondo" class="img-recommend" />
-                </figure>
-              </aside>
-            </div>
+              </li>
+              <!--Elemento 02 -->
+              <li class="item-quote">
+                <div class="item-img-quote"></div>
+                <h4 class="item-quote-title">GRADUACIÓN</h4>
+                <p class="item-quote-description">
+                  Se cobra por cada talla desrrollada <br />
+                  a partir de la talla base.
+                </p>
+              </li>
+              <!--Elemento 03 -->
+              <li class="item-quote">
+                <div class="item-img-quote"></div>
+                <h4 class="item-quote-title">TRAZO</h4>
+                <p class="item-quote-description">
+                  Se cotiza por cada trazo generado. Si una prenda <br />
+                  requiere diferentes combinaciones de tela, <br />
+                  pueden generarse varios trazos para un mismo modelo.
+                </p>
+              </li>
+              <!--Elemento 04 -->
+              <li class="item-quote">
+                <div class="item-img-quote"></div>
+                <h4 class="item-quote-title">CORTE Y CONFECCIÓN</h4>
+                <p class="item-quote-description">
+                  EL precio depende del volumen, dificultad <br />
+                  y tipo de prenda a producir.
+                </p>
+              </li>
+            </ul>
 
-            <!-- Información sobre tecnología empleada -->
-            <div class="container-programs">
-              <h3 id="title-programs">
-                TRABAJAMOS <br />
-                EN SISTEMA LECTRA
-              </h3>
-              <p id="text-program">
-                Utilizamos tecnológia de clase mundial <br />
-                para garantizar precisión, velocidad <br />
-                y eficiencia en cada proceso.
+            <div class="btn-quote">
+              <p class="text-btn-quote">
+                Trabajamos con volúmenes mínimos de 100 piezas. <br />
               </p>
-              <!-- Galería de marcas de software -->
-              <div class="logo-container">
-                <div class="lectra-img-container">
-                  <img src="#" alt="LECTRA" class="img-lectra" />
-                </div>
-                <div class="modaris-img-container">
-                  <img src="#" alt="MODARIS" class="img-modaris" />
-                </div>
-                <div class="diamino-img-container">
-                  <img src="#" alt="DIAMINO" class="imag-diamino" />
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
+
+        <!--Contenedor de recomendaciones -->
+        <div class="container-tips-main">
+          <h3 class="title-tips">RECOMENDACIONES</h3>
+          <p class="description-tips">
+            Antes de iniciar tu proyecto, te recomendamos realizar una muestra.
+          </p>
+          <div class="container-tips">
+            <ul class="list-tips">
+              <!--Recomendación 01 -->
+              <li class="item-tips">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p class="text-tips">
+                  Verificar el ajuste de la prenda <br /> y la calidad de la tela.
+                </p>
+              </li>
+              <!--Recomendación 02 -->
+              <li class="item-tips">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p class="text-tips">
+                  Confirmar la comodidad del diseño <br /> y la funcionalidad de la
+                  prenda.
+                </p>
+              </li>
+              <!--Recomendación 03 -->
+              <li class="item-tips">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p class="text-tips">
+                  Evaluar la calidad del acabado <br /> y la durabilidad de la prenda.
+                </p>
+              </li>
+              <!--Recomendación 04 -->
+              <li class="item-tips">
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p class="text-tips">
+                  Descartar posibles errores de diseño <br /> o producción antes de
+                  la fabricación <br /> en serie.
+                </p>
+              </li>
+            </ul>
+            <div class="item-img-container-tips">
+              <img
+                src="#"
+                alt="imagen de recomendaciones"
+                class="item-img-tips"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Contenedor de herramientas -->
+        <div class="container-tools-main">
+          <h3 class="title-tools">
+            TRABAJAMOS EN <br /> SISTEMA LECTRA
+          </h3>
+          <p class="description-tools">
+            Utilizamos tecnología de clase mundial <br />
+            para garantizar precisión, velocidad <br />
+            y eficiencia en cada etapa del proceso.
+          </p>
+          <div class="container-img-tools">
+            <img
+              src="/assets/lectra_logo-removebg-preview.png"
+              alt="Logo oficial de LECTRA System"
+              class="img-tools-lectra"
+              loading="lazy"
+            />
+          </div>
+          <div class="container-img-tools">
+            <img
+              src="/public/assets/modaris_logo.png"
+              alt="Logo oficial de LECTRA System"
+              class="img-tools-modaris"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -555,58 +641,60 @@
       <section class="questions-main-container">
         <h2 id="title-questions">PREGUNTAS FRECUENTES</h2>
 
-        <!-- Pregunta 01 -->
-        <details class="questions-container">
-          <summary class="title-main">
-            <i class="fa-regular fa-circle-question"></i>
-            ¿Puden trabajar solo <br />
-            con fotografías?
-          </summary>
-          <p class="description-question">
-            Si. Evaluamos la complejidad del <br />
-            diseño y la calidad de las imágenes <br />
-            para determinar la vialidad del <br />
-            desarrollo del patrón.
-          </p>
-        </details>
+        <div class="container-main-flex">
+          <!-- Pregunta 01 -->
+          <details class="questions-container">
+            <summary class="title-main">
+              <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+              ¿Puden trabajar solo <br />
+              con fotografías?
+            </summary>
+            <p class="description-question">
+              Si. Evaluamos la complejidad del <br />
+              diseño y la calidad de las imágenes <br />
+              para determinar la vialidad del <br />
+              desarrollo del patrón.
+            </p>
+          </details>
 
-        <!-- Pregunta 02 -->
-        <details class="questions-container">
-          <summary class="title-main">
-            <i class="fa-regular fa-circle-question"></i>
-            ¿Tiene producción mínimia?
-          </summary>
-          <p class="description-question">
-            Si. Trabajamos con volúmenes <br />
-            mínimos de 100 piezas.
-          </p>
-        </details>
+          <!-- Pregunta 02 -->
+          <details class="questions-container">
+            <summary class="title-main">
+              <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+              ¿Tiene producción mínimia?
+            </summary>
+            <p class="description-question">
+              Si. Trabajamos con volúmenes <br />
+              mínimos de 100 piezas.
+            </p>
+          </details>
 
-        <!-- Pregunta 03 -->
-        <details class="questions-container">
-          <summary class="title-main">
-            <i class="fa-regular fa-circle-question"></i>
-            ¿Solo ofrecen patronaje?
-          </summary>
-          <p class="description-question">
-            No. Puedes contratar únicamente <br />
-            el servicio que necesites o un <br />
-            proceso completo.
-          </p>
-        </details>
+          <!-- Pregunta 03 -->
+          <details class="questions-container">
+            <summary class="title-main">
+              <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+              ¿Solo ofrecen patronaje?
+            </summary>
+            <p class="description-question">
+              No. Puedes contratar únicamente <br />
+              el servicio que necesites o un <br />
+              proceso completo.
+            </p>
+          </details>
 
-        <!-- Pregunta 04 -->
-        <details class="questions-container">
-          <summary class="title-main">
-            <i class="fa-regular fa-circle-question"></i>
-            ¿Donde están ubicados?
-          </summary>
-          <p class="description-question">
-            Estamos en Guadalajara, Jalisco. <br />
-            Con gusto te atenderemos en <br />
-            nuestras instalaciones.
-          </p>
-        </details>
+          <!-- Pregunta 04 -->
+          <details class="questions-container">
+            <summary class="title-main">
+              <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+              ¿Donde están ubicados?
+            </summary>
+            <p class="description-question">
+              Estamos en Guadalajara, Jalisco. <br />
+              Con gusto te atenderemos en <br />
+              nuestras instalaciones.
+            </p>
+          </details>
+        </div>
       </section>
     </main>
 
@@ -627,15 +715,20 @@
       <!-- Enlaces directos y datos geográficos -->
       <div class="footer-botons-container">
         <div class="footer-boton-whatsapp">
-          <a href="#" class="link-to-whatsapp">
+          <a
+            href="#"
+            class="link-to-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             WhatsApp
-            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </a>
         </div>
         <div class="footer-boton-quote">
           <a href="#" class="link-to-quote">
             Solicitar cotización
-            <i class="fa-solid fa-table-list"></i>
+            <i class="fa-solid fa-table-list" aria-hidden="true"></i>
           </a>
         </div>
 
@@ -643,21 +736,23 @@
         <address class="container-description">
           <div class="location-container">
             <p id="location-text">
-              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               AV. AGUSTÍN YÁÑEZ 1043 <br />
               COLONIA MODERNA C.P. 44190 GUADALAJARA JALISCO C.P. 44190, MÉXICO.
             </p>
           </div>
           <div class="container-number">
             <p id="text-number">
-              <i class="fa-solid fa-phone"></i>
-              (33) 36503946
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:3336503946">(33) 36503946</a>
             </p>
           </div>
           <div class="email-container">
             <p id="email-text">
-              <i class="fa-solid fa-envelope"></i>
-              contacto@patraco.com.mx
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:contacto@patraco.com.mx"
+                >contacto@patraco.com.mx</a
+              >
             </p>
           </div>
         </address>
@@ -672,8 +767,7 @@
             allowfullscreen=""
             loading="lazy"
             title="Ubicación Patraco en Google Maps"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </figure>
       </div>
     </footer>
