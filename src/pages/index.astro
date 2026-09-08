@@ -362,7 +362,7 @@ import "../styles_index_moviles.css";
             <article class="work-item-container">
               <figure class="works-img-container">
                 <img
-                  src="#"
+                  src="/assets/works_photos.psd.webp"
                   alt="Desarrollo de patrones a partir de prendas físicas"
                   class="img-works"
                   loading="lazy"
@@ -381,7 +381,7 @@ import "../styles_index_moviles.css";
             <article class="work-item-container">
               <figure class="works-img-container">
                 <img
-                  src="#"
+                  src="/assets/works_photos.psd.webp"
                   alt="Creación de patrones mediante tabla de medidas y especificaciones técnicas"
                   class="img-works"
                   loading="lazy"
@@ -646,78 +646,77 @@ import "../styles_index_moviles.css";
 
         <div class="container-main-flex">
           <!-- Pregunta 01 -->
-          <button class="questions-container">
-            <div class="title-main">
+          <details class="questions-container">
+            <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
               ¿Puden trabajar solo <br />
               con fotografías?
-            </div>
+            </summary>
             <p class="description-question">
               Si. Evaluamos la complejidad del <br />
               diseño y la calidad de las imágenes <br />
               para determinar la vialidad del <br />
               desarrollo del patrón.
             </p>
-          </button>
+          </details>
 
           <!-- Pregunta 02 -->
-          <button class="questions-container">
-            <div class="title-main">
+          <details class="questions-container">
+            <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
               ¿Tiene producción mínimia?
-            </div>
+            </summary>
             <p class="description-question">
               Si. Trabajamos con volúmenes <br />
               mínimos de 100 piezas.
             </p>
-          </button>
+          </details>
 
           <!-- Pregunta 03 -->
-          <button class="questions-container">
-            <div class="title-main">
+          <details class="questions-container">
+            <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
               ¿Solo ofrecen patronaje?
-            </div>
+            </summary>
             <p class="description-question">
               No. Puedes contratar únicamente <br />
               el servicio que necesites o un <br />
               proceso completo.
             </p>
-          </button>
+          </details>
 
           <!-- Pregunta 04 -->
-          <button class="questions-container">
-            <div class="title-main">
+          <details class="questions-container">
+            <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
               ¿Donde están ubicados?
-            </div>
+            </summary>
             <p class="description-question">
               Estamos en Guadalajara, Jalisco. <br />
               Con gusto te atenderemos en <br />
               nuestras instalaciones.
             </p>
-          </button>
+          </details>
         </div>
       </section>
     </main>
 
     <!-- Pie de página con datos de contacto -->
     <footer class="container-footer">
-      <!-- Mensaje de cierre y contacto -->
-      <div class="footer-description-container">
-        <h2 id="title-footer">¿Listo para comenzar tu proyecto?</h2>
-        <p id="description-footer">
+
+      <!-- Mensaje de cierre  -->
+       <div class="container-message-footer">
+          <h2 class="title-footer">¿Listo para comenzar <br> tu proyecto?</h2>
+        <p class="description-footer">
           Nuestro equipo estará listo para ayudarte a desarrollar <br />
           tu próxima colección o producción.
         </p>
-        <p id="description-secondary-footer">
+        <p class="description-secondary-footer">
           Contáctanos y recibe asesoría personalizada.
         </p>
-      </div>
-
-      <!-- Enlaces directos y datos geográficos -->
-      <div class="footer-botons-container">
-        <div class="footer-boton-whatsapp">
+           <!--Links de contacto -->
+       <div class="link-contact-footer">
+        <!--WhatsApp -->
           <a
             href="#"
             class="link-to-whatsapp"
@@ -727,44 +726,44 @@ import "../styles_index_moviles.css";
             WhatsApp
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </a>
-        </div>
-        <div class="footer-boton-quote">
-          <a href="#" class="link-to-quote">
+          <!--Cotización -->
+             <a href="#" class="link-to-quote">
             Solicitar cotización
             <i class="fa-solid fa-table-list" aria-hidden="true"></i>
           </a>
-        </div>
-
-        <!-- Dirección física y datos corporativos -->
-        <address class="container-description">
-          <div class="location-container">
-            <p id="location-text">
+       </div>
+       </div>
+       <!--Dirección -->
+       <div class="container-address">
+        <address class="container-text-address">
+          <h3 class="title-address">Ubicación</h3>
+             <p class="location-text">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               AV. AGUSTÍN YÁÑEZ 1043 <br />
-              COLONIA MODERNA C.P. 44190 GUADALAJARA JALISCO C.P. 44190, MÉXICO.
+              COLONIA MODERNA C.P. 44190 <br> GUADALAJARA JALISCO <br> C.P. 44190, MÉXICO.
             </p>
-          </div>
-          <div class="container-number">
-            <p id="text-number">
+            <!--Telefono -->
+             <p id="text-number">
               <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <a href="tel:3336503946">(33) 36503946</a>
+              <a href="tel:3336503946" class="link-phone-footer">(33) 36503946</a>
             </p>
-          </div>
-          <div class="email-container">
-            <p id="email-text">
+            <!--Correo de contacto -->
+              <p id="email-text">
               <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:contacto@patraco.com.mx"
+              <a href="mailto:contacto@patraco.com.mx" class="link-to-email"
                 >contacto@patraco.com.mx</a
               >
             </p>
-          </div>
         </address>
+       </div>
+
 
         <!-- Ubicación Google Maps -->
-        <figure class="map-container">
+       <div class="container-figure-map">
+            <figure class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7466.36559040277!2d-103.36722060469685!3d20.662140912343563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2069f16e143%3A0x3017071fbc318e2c!2sPatraco%20GALMOSSA%20SA%20DE%20CV!5e0!3m2!1ses-419!2smx!4v1786575974152!5m2!1ses-419!2smx"
-            width="350"
+            width="450"
             height="350"
             style="border: 0"
             allowfullscreen=""
@@ -772,7 +771,7 @@ import "../styles_index_moviles.css";
             title="Ubicación Patraco en Google Maps"
             referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </figure>
-      </div>
+       </div>
     </footer>
   </body>
 </html>

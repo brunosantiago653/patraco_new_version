@@ -160,7 +160,7 @@
 
   /* Imagen de fondo hero */
   .image-hero {
-    height: 110vh;
+    height: 100vh;
     margin: 0;
     background-image: url("/assets/hero_image_bg.png");
     background-repeat: no-repeat;
@@ -276,7 +276,7 @@
     flex-direction: row;
     width: 500px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 5px 10px;
     border-radius: 15px;
     background-color: var(--main-bg);
@@ -295,7 +295,6 @@
   .hero-tool-image {
     width: 80px;
     height: auto;
-    background-image: url("/assets/lectra_logo-removebg-preview.png");
     object-fit: cover;
   }
 
@@ -389,7 +388,6 @@
   .solution-image {
     height: 200px;
     width: auto;
-    background-image: url("/assets/serives_patterns-removebg-preview.png");
     object-fit: cover;
     background-repeat: no-repeat;
   }
@@ -452,7 +450,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin-top: 10px;
+
+    position: relative;
   }
   .work-item-container {
     width: 400px;
@@ -465,20 +464,24 @@
 
   /* Imagenes principales de metodología */
   .works-img-container {
-    margin-top: 190px;
+    margin-top: 10px;
     display: block;
     position: absolute;
+    z-index: -999;
+
   }
   .img-works {
-    position: relative;
     height: auto;
-    width: 800px;
-    background-image: url("/assets/works_photos.psd.webp");
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
   }
   /* Texto de las tarjetas */
   .works-container-text {
     text-align: center;
-    margin-top: 0%;
+    margin-top: 330px;
   }
   .works-subtitle {
     font-family: var(--font-main);
@@ -493,8 +496,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    text-align: center;
 
     color: var(--main-text);
+    margin-top: 5px;
   }
 
   /* Imagen de logros */
@@ -507,7 +512,7 @@
   .achievements-img {
     width: 100%;
     height: 120px;
-    background-image: url("/assets/works_image_patraco.jpeg");
+
     background-repeat: no-repeat;
     object-fit: cover;
   }
@@ -588,7 +593,7 @@
     justify-content: center;
 
     width: 400px;
-    height: 470px;
+    height: 570px;
     padding: 20px 30px;
     margin-left: 20px;
 
@@ -658,8 +663,8 @@
     flex-direction: column;
     justify-content: center;
 
-    height: 470px;
-    width: 470px;
+    height: 570px;
+    width: 590px;
     padding: 20px 30px;
     margin-right: 390px;
 
@@ -718,7 +723,7 @@
 
     margin-top: -1px;
     margin-left: -390px;
-    height: 470px;
+    height: 570px;
     width: 315px;
     background-color: #f0e9e9;
     box-shadow:
@@ -834,12 +839,159 @@
 
   /* Estilos para el footer */
   .container-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 90px;
     background-color: var(--main-bg);
     color: var(--secondary-text);
+  }
+
+  /* Contenido de footer */
+
+  /* Información de contacto */
+  .container-message-footer {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .title-footer {
+    font-family: var(--font-main);
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .description-footer {
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin-top: 20px;
+  }
+  .description-secondary-footer {
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin-top: 20px;
+  }
+
+  /* Links de contacto */
+  .link-contact-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 25px;
+    gap: 20px;
+  }
+
+  /* Link a whatsapp */
+  .link-to-whatsapp {
+    padding: 12px 18px;
+    border-radius: 5px;
+    width: 270px;
+    background-color: var(--whastsapp-bg);
+
+    font-family: var(--font-second);
+    font-size: 20px;
+    font-weight: 500;
+
+    color: var(--secondary-text);
+    text-decoration: none;
+    text-align: center;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
+  }
+  .link-to-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
+  }
+
+  /* Link de cotización */
+  .link-to-quote {
+    padding: 12px 18px;
+    border-radius: 5px;
+    width: 270px;
+
+    background-color: var(--hover-bg);
+
+    font-family: var(--font-second);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-text);
+
+    text-decoration: none;
+    text-align: center;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
+  }
+  .link-to-quote:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 14px 0 rgba(0, 123, 255, 0.4);
+  }
+
+  /* dirección y datos generales */
+  .container-address {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .title-address {
+    font-family: var(--font-main);
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .location-text {
+    font-family: var(--font-second);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin-top: 20px;
+    color: var(--secondary-text);
+  }
+  .fa-location-dot {
+    color: var(--general-bg);
+  }
+  #text-number {
+    margin-top: 20px;
+  }
+  .link-phone-footer {
+    font-family: var(--font-second);
+    font-size: 18px;
+    color: var(--secondary-text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #email-text {
+    margin-top: 20px;
+  }
+  .link-to-email {
+    font-family: var(--font-second);
+    font-size: 18px;
+    color: var(--secondary-text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .link-to-email:hover{
+    text-decoration: underline;
+    transition: 0.8s ease-in;
+  }
+  .fa-phone,
+  .fa-location-dot,
+  .fa-envelope {
+    color: var(--secondary-text);
+    margin-right: 10px;
+  }
+
+  /* Estilos para iframe */
+  .container-figure-map {
+    margin-top: 30px;
+    margin-right: 30px;
   }
 }
