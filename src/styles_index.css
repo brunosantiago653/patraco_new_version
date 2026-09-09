@@ -542,6 +542,12 @@
     background-repeat: no-repeat;
   }
 
+  .image-process-mobile {
+    display: none;
+  }
+  .img-process-mobile {
+    display: none;
+  }
   /* Cartas de proceso de producción */
   .process-container {
     display: flex;
