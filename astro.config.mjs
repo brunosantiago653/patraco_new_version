@@ -1,23 +1,25 @@
 // astro.config.mjs
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
   server: {
     host: true, // Necesario para que funcione la IP 192.168.100.6
-    port: 4321, 
+    port: 4321,
   },
   vite: {
     server: {
-      // ❌ DEJA COMENTADO TODO LO DE NGROK:
       // allowedHosts: ['tapioca-applicant-deem.ngrok-free.dev'],
-      // ws: { clientPort: 443 }, 
+      // ws: { clientPort: 443 },
+      hmr: {
+        host: "192.168.100.6", // Tu IP local actual
+      },
       cors: true,
     },
     css: { devSourcemap: true },
   },
-  markdown: { syntaxHighlight: 'prism' },
+  markdown: { syntaxHighlight: "prism" },
 });
-  /* security: {
+/* security: {
     csp: {
       scriptDirective: {
         resources: [
