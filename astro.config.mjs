@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   server: {
     host: true, // Necesario para que funcione la IP 192.168.100.6
-    port: 4321, 
+    port: 4322, 
   },
   vite: {
     server: {
