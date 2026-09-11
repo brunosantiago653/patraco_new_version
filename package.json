@@ -27,5 +27,13 @@
   "homepage": "https://github.com/brunosantiago653/patraco_new_version#readme",
   "dependencies": {
     "astro": "^7.2.9"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^8.2.3",
+    "terser": "^5.51.2"
+  },
+  "allowScripts": {
+    "core-js@3.50.0": true,
+    "esbuild@0.28.2": true
   }
 }
