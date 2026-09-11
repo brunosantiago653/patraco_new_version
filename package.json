@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/brunosantiago653/patraco_new_version#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "astro": "^7.2.9"
   },
   "devDependencies": {

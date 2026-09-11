@@ -1,10 +1,3 @@
----
-import "../styles_index.css";
-import "../styles_index_escritorio.css";
-import "../styles_index_tabletas.css";
-import "../styles_index_moviles.css";
----
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -35,7 +28,13 @@ import "../styles_index_moviles.css";
       src="https://kit.fontawesome.com/2a3f562a19.js"
       crossorigin="anonymous"></script>
     <!-- JavaScript propio -->
-    <script src="../script_index.js" defer></script>
+
+    <script is:inline src="/script_index.js" defer></script>
+    <!--Hojas de estilos -->
+    <link rel="stylesheet" href="/styles/styles_index.css" />
+    <link rel="stylesheet" href="/styles/styles_index_escritorio.css" />
+    <link rel="stylesheet" href="/styles/styles_index_tabletas.css" />
+    <link rel="stylesheet" href="/styles/styles_index_moviles.css" />
   </head>
   <body>
     <!-- Encabezado principal y navegación -->
@@ -51,14 +50,14 @@ import "../styles_index_moviles.css";
             height="50"
           />
         </div>
-        
+
         <!--Botón hamburguesa -->
         <button
           class="navToggle"
           aria-label="Abrir menú de navegación"
           aria-expanded="false"
         >
-        <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <!-- Menú de navegación principal -->
