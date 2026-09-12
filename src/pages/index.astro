@@ -1,5 +1,8 @@
 ---
 import "../styles/styles_index.css";
+import "../styles/styles_index_moviles.css";
+
+import logoPatraco from "../assets/patraco_logo.png";
 ---
 <!doctype html>
 <html lang="es">
@@ -37,7 +40,7 @@ import "../styles/styles_index.css";
     />
     <!-- JavaScript propio -->
 
-    <script is:inline src="/script_index.js" defer></script> 
+   <script src="../js/script_index.js"></script>
   </head>
   <body>
     <!-- Encabezado principal y navegación -->
@@ -64,7 +67,7 @@ import "../styles/styles_index.css";
         </button>
 
         <!-- Menú de navegación principal -->
-        <nav class="navbar_container" aria-label="Navegación principal">
+        <nav class="navbar_container" id="navbar-dropdown" aria-label="Navegación principal">
           <ul class="navbar">
             <li><a href="index.html" class="link-menu">Inicio</a></li>
             <li>
@@ -78,7 +81,7 @@ import "../styles/styles_index.css";
               >
             </li>
             <li><a href="nosotros.html" class="link-menu">Nosotros</a></li>
-            <li><a href="contacto.html" class="link-menu">Contacto</a></li>
+            <li><a href="index.html#container-footer" class="link-menu">Contacto</a></li>
             <li>
               <a
                 href="#"
@@ -722,7 +725,7 @@ import "../styles/styles_index.css";
     </main>
 
     <!-- Pie de página con datos de contacto -->
-    <footer class="container-footer">
+    <footer id="container-footer">
       <!-- Mensaje de cierre  -->
       <div class="container-message-footer">
         <h2 class="title-footer">¿Listo para comenzar <br /> tu proyecto?</h2>
