@@ -3,8 +3,8 @@
 import "../styles/styles_index.css";
 import "../styles/styles_index_moviles.css";
 
-import "../styles/styles_index.css";
-import "../styles/styles_index_moviles.css";
+// Componente nativo de imágenes de Astro
+import { Image } from "astro:assets";
 
 // Header y Logos
 import logoPatraco from "../assets/patraco_logo.png";
@@ -55,7 +55,7 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/patraco_logo.png" />
 
-    <!--Font Awsome -->
+    <!--Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -64,7 +64,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
       referrerpolicy="no-referrer"
     />
     <!-- JavaScript propio -->
-
     <script src="../js/script_index.js"></script>
   </head>
   <body>
@@ -73,11 +72,11 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
       <div class="header_container_main">
         <!-- Logotipo de la marca -->
         <div class="logo-container">
-          <img
-            src={logoPatraco.src}
-            alt="Logo"
-            width="180"
-            height="50"
+          <Image
+            src={logoPatraco}
+            alt="Logo Patraco"
+            width={180}
+            height={50}
             class="logo"
           />
         </div>
@@ -136,8 +135,8 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
       <section class="hero-container-main">
         <!-- Imagen gráfica de portada -->
         <figure class="image-container-hero">
-          <img
-            src={heroBg.src}
+          <Image
+            src={heroBg}
             alt="Taller de patronaje, trazo y corte textil especializado"
             class="image-hero"
             loading="eager"
@@ -216,11 +215,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Software y herramientas utilizadas -->
           <div class="hero-tools-container">
             <div class="hero-tool-item">
-              <img
-                src={logoLectra.src}
+              <Image
+                src={logoLectra}
                 alt="Logo del software LECTRA Modarís | Diamino"
                 class="hero-tool-image"
-                loading="lazy"
               />
             </div>
             <div class="hero-tool-description">
@@ -247,11 +245,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 01 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={servicePattern.src}
+              <Image
+                src={servicePattern}
                 alt="Servicio de patronaje profesional de ropa"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -267,11 +264,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 02 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={serviceGraduate.src}
+              <Image
+                src={serviceGraduate}
                 alt="Servicio de graduación y escalado de tallas textiles"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -288,11 +284,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 03 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={serviceTrace.src}
+              <Image
+                src={serviceTrace}
                 alt="Servicio de trazo computarizado para telas"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -311,11 +306,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 04 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={servicePrinter.src}
+              <Image
+                src={servicePrinter}
                 alt="Impresión de trazos en plotter para confección"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -334,11 +328,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 05 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={serviceCut.src}
+              <Image
+                src={serviceCut}
                 alt="Servicio de corte de tela para producción textil"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -354,11 +347,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <!-- Servicio 06 -->
           <article class="solution-item-container">
             <figure class="solution-item">
-              <img
-                src={serviceMaking.src}
+              <Image
+                src={serviceMaking}
                 alt="Servicio de confección y maquila de prendas"
                 class="solution-image"
-                loading="lazy"
               />
             </figure>
             <div class="solution-description">
@@ -389,11 +381,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             <!-- Método 01 -->
             <article class="work-item-container">
               <figure class="works-img-container">
-                <img
-                  src={worksPhotos.src}
+                <Image
+                  src={worksPhotos}
                   alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
-                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -409,11 +400,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             <!-- Método 02 -->
             <article class="work-item-container">
               <figure class="works-img-container">
-                <img
-                  src={worksPhotos.src}
+                <Image
+                  src={worksPhotos}
                   alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
-                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -428,11 +418,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             <!-- Método 03 -->
             <article class="work-item-container">
               <figure class="works-img-container">
-                <img
-                  src={worksPhotos.src}
+                <Image
+                  src={worksPhotos}
                   alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
-                  loading="lazy"
                 />
               </figure>
               <div class="works-container-text">
@@ -449,11 +438,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
         <!-- Indicadores de logros y trayectoria -->
         <div class="items-works-container">
           <figure class="achievements-container-image">
-            <img
-              src={worksImagePatraco.src}
+            <Image
+              src={worksImagePatraco}
               class="achievements-img"
               alt="Instalaciones de Patraco y trayectoria en la industria textil"
-              loading="lazy"
             />
           </figure>
         </div>
@@ -465,24 +453,21 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           <h2 id="title-process">NUESTRO PROCESO</h2>
         </div>
         <div class="image-process">
-          <img
-            src={processHero.src}
+          <Image
+            src={processHero}
             alt="Infografía del proceso de producción textil en Patraco"
             class="img-process"
-            loading="lazy"
           />
         </div>
         <div class="image-process-mobile">
-          <img
-            src={productionHeroMovil.src}
+          <Image
+            src={productionHeroMovil}
             alt="Infografía del proceso de producción textil en Patraco"
             class="img-process-mobile"
-            loading="lazy"
           />
         </div>
         <!-- Pasos interactivos del proceso -->
         <ol class="process-container">
-          <!-- Paso 01 -->
           <li class="container-icon-process">
             <div class="process-container-text">
               <h3 class="title-text-process">
@@ -496,8 +481,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
               </p>
             </div>
           </li>
-
-          <!-- Paso 02 -->
           <li class="container-icon-process">
             <div class="process-container-text">
               <h3 class="title-text-process">
@@ -511,8 +494,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
               </p>
             </div>
           </li>
-
-          <!-- Paso 03 -->
           <li class="container-icon-process">
             <div class="process-container-text">
               <h3 class="title-text-process">
@@ -526,8 +507,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
               </p>
             </div>
           </li>
-
-          <!-- Paso 04 -->
           <li class="container-icon-process">
             <div class="process-container-text">
               <h3 class="title-text-process">
@@ -541,8 +520,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
               </p>
             </div>
           </li>
-
-          <!-- Paso 05 -->
           <li class="container-icon-process">
             <div class="process-container-text">
               <h3 class="title-text-process">
@@ -561,7 +538,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
 
       <!--Sección de cotizaciones -->
       <section class="container-main-quote">
-        <!--Contenedor de cotizaciones -->
         <div class="container-quote">
           <h3 class="title-quote">¿CÓMO COTIZAMOS?</h3>
           <p class="desciption-quote">
@@ -570,7 +546,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           </p>
           <div class="list-container-quote">
             <ul class="list-quote">
-              <!--Elemento 01 -->
               <li class="item-quote">
                 <div class="item-img-quote"></div>
                 <h4 class="item-quote-title">PATRONAJE</h4>
@@ -579,16 +554,14 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
                   y el número de piezas.
                 </p>
               </li>
-              <!--Elemento 02 -->
               <li class="item-quote">
                 <div class="item-img-quote"></div>
                 <h4 class="item-quote-title">GRADUACIÓN</h4>
                 <p class="item-quote-description">
-                  Se cobra por cada talla desrrollada <br />
+                  Se cobra por cada talla desarrollada <br />
                   a partir de la talla base.
                 </p>
               </li>
-              <!--Elemento 03 -->
               <li class="item-quote">
                 <div class="item-img-quote"></div>
                 <h4 class="item-quote-title">TRAZO</h4>
@@ -598,12 +571,11 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
                   pueden generarse varios trazos para un mismo modelo.
                 </p>
               </li>
-              <!--Elemento 04 -->
               <li class="item-quote">
                 <div class="item-img-quote"></div>
                 <h4 class="item-quote-title">CORTE Y CONFECCIÓN</h4>
                 <p class="item-quote-description">
-                  EL precio depende del volumen, dificultad <br />
+                  El precio depende del volumen, dificultad <br />
                   y tipo de prenda a producir.
                 </p>
               </li>
@@ -625,14 +597,12 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
           </p>
           <div class="container-tips">
             <ul class="list-tips">
-              <!--Recomendación 01 -->
               <li class="item-tips">
                 <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                 <p class="text-tips">
                   Verificar el ajuste de la prenda <br /> y la calidad de la tela.
                 </p>
               </li>
-              <!--Recomendación 02 -->
               <li class="item-tips">
                 <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                 <p class="text-tips">
@@ -640,14 +610,12 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
                   prenda.
                 </p>
               </li>
-              <!--Recomendación 03 -->
               <li class="item-tips">
                 <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                 <p class="text-tips">
                   Evaluar la calidad del acabado <br /> y la durabilidad de la prenda.
                 </p>
               </li>
-              <!--Recomendación 04 -->
               <li class="item-tips">
                 <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                 <p class="text-tips">
@@ -656,14 +624,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
                 </p>
               </li>
             </ul>
-            <!-- <div class="item-img-container-tips">
-              <img
-                src="#"
-                alt="imagen de recomendaciones"
-                class="item-img-tips"
-                loading="lazy"
-              />
-            </div> -->
           </div>
         </div>
 
@@ -678,19 +638,17 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             y eficiencia en cada etapa del proceso.
           </p>
           <div class="container-img-tools">
-            <img
-              src={logoLectra.src}
+            <Image
+              src={logoLectra}
               alt="Logo oficial de LECTRA System"
               class="img-tools-lectra"
-              loading="lazy"
             />
           </div>
           <div class="container-img-tools">
-            <img
-              src={logoModaris.src}
+            <Image
+              src={logoModaris}
               alt="Logo oficial de LECTRA System"
               class="img-tools-modaris"
-              loading="lazy"
             />
           </div>
         </div>
@@ -701,34 +659,31 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
         <h2 id="title-questions">PREGUNTAS FRECUENTES</h2>
 
         <div class="container-main-flex">
-          <!-- Pregunta 01 -->
           <details class="questions-container">
             <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
-              ¿Puden trabajar solo <br />
+              ¿Pueden trabajar solo <br />
               con fotografías?
             </summary>
             <p class="description-question">
-              Si. Evaluamos la complejidad del <br />
+              Sí. Evaluamos la complejidad del <br />
               diseño y la calidad de las imágenes <br />
-              para determinar la vialidad del <br />
+              para determinar la viabilidad del <br />
               desarrollo del patrón.
             </p>
           </details>
 
-          <!-- Pregunta 02 -->
           <details class="questions-container">
             <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
-              ¿Tiene producción mínimia?
+              ¿Tienen producción mínima?
             </summary>
             <p class="description-question">
-              Si. Trabajamos con volúmenes <br />
+              Sí. Trabajamos con volúmenes <br />
               mínimos de 100 piezas.
             </p>
           </details>
 
-          <!-- Pregunta 03 -->
           <details class="questions-container">
             <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
@@ -741,11 +696,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             </p>
           </details>
 
-          <!-- Pregunta 04 -->
           <details class="questions-container">
             <summary class="title-main">
               <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
-              ¿Donde están ubicados?
+              ¿Dónde están ubicados?
             </summary>
             <p class="description-question">
               Estamos en Guadalajara, Jalisco. <br />
@@ -759,7 +713,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
 
     <!-- Pie de página con datos de contacto -->
     <footer id="container-footer">
-      <!-- Mensaje de cierre  -->
       <div class="container-message-footer">
         <h2 class="title-footer">¿Listo para comenzar <br /> tu proyecto?</h2>
         <p class="description-footer">
@@ -769,9 +722,7 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
         <p class="description-secondary-footer">
           Contáctanos y recibe asesoría personalizada.
         </p>
-        <!--Links de contacto -->
         <div class="link-contact-footer">
-          <!--WhatsApp -->
           <a
             href="#"
             class="link-to-whatsapp"
@@ -781,14 +732,12 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             WhatsApp
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </a>
-          <!--Cotización -->
           <a href="#" class="link-to-quote">
             Solicitar cotización
             <i class="fa-solid fa-table-list" aria-hidden="true"></i>
           </a>
         </div>
       </div>
-      <!--Dirección -->
       <div class="container-address">
         <address class="container-text-address">
           <h3 class="title-address">Ubicación</h3>
@@ -798,12 +747,10 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
             COLONIA MODERNA C.P. 44190 <br /> GUADALAJARA JALISCO <br /> C.P. 44190,
             MÉXICO.
           </p>
-          <!--Telefono -->
           <p id="text-number">
             <i class="fa-solid fa-phone" aria-hidden="true"></i>
             <a href="tel:3336503946" class="link-phone-footer">(33) 36503946</a>
           </p>
-          <!--Correo de contacto -->
           <p id="email-text">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <a href="mailto:contacto@patraco.com.mx" class="link-to-email"
@@ -813,7 +760,6 @@ import worksImagePatraco from "../assets/works_image_patraco.jpeg";
         </address>
       </div>
 
-      <!-- Ubicación Google Maps -->
       <div class="container-figure-map">
         <figure class="map-container">
           <iframe
