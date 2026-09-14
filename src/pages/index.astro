@@ -1,9 +1,34 @@
 ---
+// links a hojas de estilos
 import "../styles/styles_index.css";
 import "../styles/styles_index_moviles.css";
 
+import "../styles/styles_index.css";
+import "../styles/styles_index_moviles.css";
+
+// Header y Logos
 import logoPatraco from "../assets/patraco_logo.png";
+import logoLectra from "../assets/lectra_logo-removebg-preview.png";
+import logoModaris from "../assets/modaris_logo.png";
+
+// Hero y Proceso
+import heroBg from "../assets/hero_image_bg.png";
+import processHero from "../assets/proccess_hero.png";
+import productionHeroMovil from "../assets/production_hero_movil.png";
+
+// Servicios
+import servicePattern from "../assets/services_pattern.webp";
+import serviceGraduate from "../assets/services_graduate-1.webp";
+import serviceTrace from "../assets/services_trace.webp";
+import servicePrinter from "../assets/services_printer.webp";
+import serviceCut from "../assets/services_cut.webp";
+import serviceMaking from "../assets/services_making.webp";
+
+// Metodología y Trabajos
+import worksPhotos from "../assets/works_photos.psd.webp";
+import worksImagePatraco from "../assets/works_image_patraco.jpeg";
 ---
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -40,7 +65,7 @@ import logoPatraco from "../assets/patraco_logo.png";
     />
     <!-- JavaScript propio -->
 
-   <script src="../js/script_index.js"></script>
+    <script src="../js/script_index.js"></script>
   </head>
   <body>
     <!-- Encabezado principal y navegación -->
@@ -48,7 +73,13 @@ import logoPatraco from "../assets/patraco_logo.png";
       <div class="header_container_main">
         <!-- Logotipo de la marca -->
         <div class="logo-container">
-          <img src={logoPatraco.src} alt="Logo" width="180" height="50" class="logo" />
+          <img
+            src={logoPatraco.src}
+            alt="Logo"
+            width="180"
+            height="50"
+            class="logo"
+          />
         </div>
 
         <!--Botón hamburguesa -->
@@ -61,7 +92,11 @@ import logoPatraco from "../assets/patraco_logo.png";
         </button>
 
         <!-- Menú de navegación principal -->
-        <nav class="navbar_container" id="navbar-dropdown" aria-label="Navegación principal">
+        <nav
+          class="navbar_container"
+          id="navbar-dropdown"
+          aria-label="Navegación principal"
+        >
           <ul class="navbar">
             <li><a href="index.html" class="link-menu">Inicio</a></li>
             <li>
@@ -75,7 +110,11 @@ import logoPatraco from "../assets/patraco_logo.png";
               >
             </li>
             <li><a href="nosotros.html" class="link-menu">Nosotros</a></li>
-            <li><a href="index.html#container-footer" class="link-menu">Contacto</a></li>
+            <li>
+              <a href="index.html#container-footer" class="link-menu"
+                >Contacto</a
+              >
+            </li>
             <li>
               <a
                 href="#"
@@ -98,7 +137,7 @@ import logoPatraco from "../assets/patraco_logo.png";
         <!-- Imagen gráfica de portada -->
         <figure class="image-container-hero">
           <img
-            src="src/assets/hero_image_bg.png"
+            src={heroBg.src}
             alt="Taller de patronaje, trazo y corte textil especializado"
             class="image-hero"
             loading="eager"
@@ -178,7 +217,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <div class="hero-tools-container">
             <div class="hero-tool-item">
               <img
-                src="src/assets/lectra_logo-removebg-preview.png"
+                src={logoLectra.src}
                 alt="Logo del software LECTRA Modarís | Diamino"
                 class="hero-tool-image"
                 loading="lazy"
@@ -209,10 +248,12 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_pattern.webp"
+                <img
+                src={servicePattern.src}
                 alt="Servicio de patronaje profesional de ropa"
                 class="solution-image"
                 loading="lazy"
+              />
               />
             </figure>
             <div class="solution-description">
@@ -229,7 +270,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_graduate-1.webp"
+                src={serviceGraduate.src}
                 alt="Servicio de graduación y escalado de tallas textiles"
                 class="solution-image"
                 loading="lazy"
@@ -250,7 +291,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_trace.webp"
+                src={serviceTrace.src}
                 alt="Servicio de trazo computarizado para telas"
                 class="solution-image"
                 loading="lazy"
@@ -273,7 +314,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_printer.webp"
+                src={servicePrinter.src}
                 alt="Impresión de trazos en plotter para confección"
                 class="solution-image"
                 loading="lazy"
@@ -296,7 +337,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_cut.webp"
+                src={serviceCut.src}
                 alt="Servicio de corte de tela para producción textil"
                 class="solution-image"
                 loading="lazy"
@@ -316,7 +357,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           <article class="solution-item-container">
             <figure class="solution-item">
               <img
-                src="src/assets/services_making.webp"
+                src={serviceMaking.src}
                 alt="Servicio de confección y maquila de prendas"
                 class="solution-image"
                 loading="lazy"
@@ -351,7 +392,7 @@ import logoPatraco from "../assets/patraco_logo.png";
             <article class="work-item-container">
               <figure class="works-img-container">
                 <img
-                  src="src/assets/works_photos.psd.webp"
+                  src={worksPhotos.src}
                   alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
                   loading="lazy"
@@ -371,8 +412,8 @@ import logoPatraco from "../assets/patraco_logo.png";
             <article class="work-item-container">
               <figure class="works-img-container">
                 <img
-                  src="src/assets/works_photos.psd.webp"
-                  alt="Desarrollo de patrones a partir de prendas físicas"
+                  src={worksPhotos.src}
+                  alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
                   loading="lazy"
                 />
@@ -390,8 +431,8 @@ import logoPatraco from "../assets/patraco_logo.png";
             <article class="work-item-container">
               <figure class="works-img-container">
                 <img
-                  src="src/assets/works_photos.psd.webp"
-                  alt="Creación de patrones mediante tabla de medidas y especificaciones técnicas"
+                  src={worksPhotos.src}
+                  alt="Evaluación de patrones en fotografías de diseños"
                   class="img-works"
                   loading="lazy"
                 />
@@ -411,7 +452,7 @@ import logoPatraco from "../assets/patraco_logo.png";
         <div class="items-works-container">
           <figure class="achievements-container-image">
             <img
-              src="src/assets/works_image_patraco.jpeg"
+              src={worksImagePatraco.src}
               class="achievements-img"
               alt="Instalaciones de Patraco y trayectoria en la industria textil"
               loading="lazy"
@@ -427,7 +468,7 @@ import logoPatraco from "../assets/patraco_logo.png";
         </div>
         <div class="image-process">
           <img
-            src="src/assets/proccess_hero.png"
+            src={processHero.src}
             alt="Infografía del proceso de producción textil en Patraco"
             class="img-process"
             loading="lazy"
@@ -435,7 +476,7 @@ import logoPatraco from "../assets/patraco_logo.png";
         </div>
         <div class="image-process-mobile">
           <img
-            src="/assets/production_hero_movil.png"
+            src={productionHeroMovil.src}
             alt="Infografía del proceso de producción textil en Patraco"
             class="img-process-mobile"
             loading="lazy"
@@ -640,7 +681,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           </p>
           <div class="container-img-tools">
             <img
-              src="src/assets/lectra_logo-removebg-preview.png"
+              src={logoLectra.src}
               alt="Logo oficial de LECTRA System"
               class="img-tools-lectra"
               loading="lazy"
@@ -648,7 +689,7 @@ import logoPatraco from "../assets/patraco_logo.png";
           </div>
           <div class="container-img-tools">
             <img
-              src="src/assets/modaris_logo.png"
+              src={logoModaris.src}
               alt="Logo oficial de LECTRA System"
               class="img-tools-modaris"
               loading="lazy"
