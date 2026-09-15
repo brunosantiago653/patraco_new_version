@@ -1,82 +1,87 @@
 /* ======================================
    Menú desplegable 
    ====================================== */
+document.addEventListener('DOMContentLoaded', () => {
 
+  // Declarar las variables
+  const navToggle = document.querySelector('.navToggle');
+  const navBar = document.getElementById('navbar-dropdown');
+  const navClose = document.querySelector('.navClose');
+  const links = navBar ? navBar.querySelectorAll('.link-menu, .link-menu-whatsapp') : [];
 
-// 1). Definir las variables y evento EventListener
-document.addEventListener("DOMContentLoaded", () => {
-  const navToggle = document.querySelector(".navToggle");
-  const navbarDropdown = document.getElementById("navbar-dropdown");
-  const icono = navToggle?.querySelector("i");
+  if (!navToggle || !navBar) return;
 
-  // Salida forzada si no existen los elemento o links de la página
-  if (!navToggle || !navbarDropdown) return;
+  // Fondo oscuro (overlay)
+  const overlay = document.createElement('div');
+  overlay.classList.add('nav-overlay'); // ✅ corregido
+  document.body.appendChild(overlay);
 
-  // 2) Función para abrir el menú
+  // Script de detección si es celular o tablet
+  const isMobile = () => window.matchMedia('(max-width: 1023px)').matches;
+
+  // Abrir el menú
+  const openMenu = () => {
+    if (!isMobile()) return;
+    navBar.classList.add('is-open'); // ✅ corregido
+    overlay.classList.add('is-active');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden'; // Sirve para bloquear el scroll del fondo
+  };
+
+  // Cerrar el menú
+  const closeMenu = () => {
+    navBar.classList.remove('is-open');
+    overlay.classList.remove('is-active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  // Abrir/cerrar
   const toggleMenu = () => {
-    const estaAbierto = navbarDropdown.classList.toggle("active");
-
-    navToggle.setAttribute("aria-expanded", estaAbierto);
-
-    navToggle.setAttribute(
-      "aria-label",
-      estaAbierto ? "Cerrarr menú de navegación" : "Abrir menú de navegación",
-    );
-
-    if (icono) {
-      icono.classList.toggle("fa-bars", !estaAbierto);
-      icono.classList.toggle("fa-xmark", estaAbierto);
-    }
-
-    document.body.classList.toggle("menu-abierto", estaAbierto);
+    navBar.classList.contains('is-open') ? closeMenu() : openMenu();
   };
 
-  //3) Cerrar el menú
-  const cerrarMenu = () => {
-    if (!navbarDropdown.classList.contains("active")) return;
+  // 1. Clic en botón de barras
+  navToggle.addEventListener('click', toggleMenu);
 
-    navbarDropdown.classList.remove("active");
-    navToggle.setAttribute("aria-expanded , false");
-    navToggle.setAttribute("aria-label", "Abrir menú de navegación");
+  // 2. Clic en botón X (solo si existe)
+  if (navClose) {
+    navClose.addEventListener('click', closeMenu);
+  }
 
-    if (icono) {
-      icono.classList.add("fa-bars");
-      icono.classList.remove("fa-xmark");
-    }
+  // 3. Clic en overlay
+  overlay.addEventListener('click', closeMenu);
 
-    document.body.classList.remove("menu-abierto");
-  };
+  // 4. Cerrar al hacer clic en cualquier link
+  links.forEach(link => link.addEventListener('click', closeMenu));
 
-  // Clic en el botón barras (se cierra)
-  navToggle.addEventListener("click", toggleMenu);
-
-  // Clic fuera del menú (se cierra)
-  document.addEventListener("click", (evento) => {
-    const clicDentroMenu = navbarDropdown.contains(evento.target);
-    const clickEnElBoton = navToggle.contains(evento.target);
-
-    if (!clicDentroMenu && !clickEnElBoton) {
-      cerrarMenu();
-    }
+  // 5. Cerrar con tecla ESC
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && navBar.classList.contains('is-open')) closeMenu();
   });
 
-  // Cerra con tecla escape
-  document.addEventListener("keydown", (evento) => {
-    if (evento.key === "Escape") {
-      cerrarMenu();
-      navToggle.focus();
-    }
+  // 6. Cerrar si el usuario rota el dispositivo o agranda la pantalla
+  window.addEventListener('resize', () => {
+    if (!isMobile()) closeMenu();
   });
 
-  // Se desactiva el menú cuando pasamos a escritorio
-  window.addEventListener("resize", () => {
-    if (window.innerWidth >= 768) {
-      cerrarMenu();
+  // 7. Cerrar si hace clic fuera del menú
+  document.addEventListener('click', e => {
+    if (!isMobile()) return;
+    if (
+      navBar.classList.contains('is-open') &&
+      !navBar.contains(e.target) &&
+      !navToggle.contains(e.target) &&
+      !(navClose && navClose.contains(e.target)) // ✅ evita doble disparo en el X
+    ) {
+      closeMenu();
     }
   });
 });
 
-// Script funcional para la sección de preguntas
+/* ===========================================
+   Script funcional para botones de preguntas
+   =========================================== */
 // Este script sirve para mantener abierta una a la vez cada caja de preguntas. Al hacer clic en otra pregunta, se cierra automaticamnete la anterior
 document.addEventListener("DOMContentLoaded", () => {
   const preguntas = document.querySelectorAll(".questions-container");
