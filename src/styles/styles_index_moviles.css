@@ -30,7 +30,6 @@
 /* Estilos para dispositivos móviles */
 /* Adaptación para dispositivos móviles (hasta 767px) */
 @media screen and (max-width: 767px) {
-
   /* Encabezado fijo superior */
   .header_container {
     position: fixed;
@@ -149,12 +148,16 @@
     font-weight: 500;
     color: var(--secondary-text);
     text-decoration: none;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .link-menu-whatsapp:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Sección de hero */
@@ -252,7 +255,9 @@
     color: var(--secondary-text);
     text-decoration: none;
     text-align: center;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-cotizar:hover {
@@ -280,12 +285,16 @@
     color: var(--secondary-text);
     text-decoration: none;
     text-align: center;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .btn-hero-whatsapp:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   /* Tarjeta de herramientas y software */
@@ -300,7 +309,9 @@
     border-radius: 15px;
     background-color: var(--main-bg);
     color: var(--secondary-text);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.08),
+      0 4px 6px -4px rgba(0, 0, 0, 0.08);
   }
 
   .hero-tool-item {
@@ -389,7 +400,9 @@
     padding-bottom: 20px;
     border-radius: 15px;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: transform 0.7s ease;
   }
@@ -625,7 +638,9 @@
     padding: 20px;
     margin-left: 0;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
 
   .title-quote {
@@ -696,7 +711,9 @@
     padding: 20px;
     margin-right: 0;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
 
   .title-tips {
@@ -753,7 +770,9 @@
     max-width: 100%;
     padding: 20px;
     background-color: #f0e9e9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
   }
 
   .title-tools {
@@ -817,6 +836,7 @@
     font-weight: 550;
     font-size: 22px;
     color: var(--hover-text);
+    margin: 0;
   }
 
   .container-main-flex {
@@ -831,32 +851,60 @@
 
   .questions-container {
     background-color: #f9f9f9;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.08);
-    height: auto;
-    min-height: 90px;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.08);
     width: 100%;
     max-width: 320px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.8s ease;
+    transition:
+      transform 0.4s ease,
+      box-shadow 0.4s ease;
+    overflow: hidden;
   }
 
   .questions-container:hover {
     transform: scale(1.03);
-    transition: 0.8s ease;
+  }
+
+  .questions-container[open] {
+    transform: scale(1.03);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.05),
+      0 6px 22px rgba(0, 0, 0, 0.12);
   }
 
   .title-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--hover-text);
     font-family: var(--font-main);
     font-size: 15px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .title-main::-webkit-details-marker {
+    display: none;
+  }
+  .title-main::marker {
+    display: none;
+    content: "";
+  }
+
+  .title-main i {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .questions-container[open] .title-main i {
+    transform: rotate(180deg);
   }
 
   .description-question {
@@ -864,7 +912,20 @@
     color: var(--main-text);
     font-size: 14px;
     font-weight: 600;
-    display: none;
+    margin: 12px 0 0 0;
+    line-height: 1.5;
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .questions-container[open] .description-question {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* Footer */
@@ -928,12 +989,16 @@
     color: var(--secondary-text);
     text-decoration: none;
     text-align: center;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .link-to-whatsapp:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(40, 167, 69, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(40, 167, 69, 0.2);
   }
 
   .link-to-quote {
@@ -948,7 +1013,9 @@
     color: var(--secondary-text);
     text-decoration: none;
     text-align: center;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
   }
 
   .link-to-quote:hover {
@@ -1031,4 +1098,3 @@
     height: 350px;
   }
 }
-
